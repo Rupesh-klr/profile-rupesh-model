@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "client": "Vedika Raksha",
+    "page": "privacy-policy",
+    "note": "Template legal text — please review with a professional before publishing. Bilingual { en, te }."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "title": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" },
+    "social": [
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/918074540299", "handle": "WhatsApp" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "home", "label": { "en": "← Home", "te": "← హోమ్" }, "route": "/" },
+      { "id": "terms", "label": { "en": "Terms", "te": "నిబంధనలు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "id": "privacy", "label": { "en": "Privacy", "te": "గోప్యత" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "id": "refund", "label": { "en": "Refund", "te": "రీఫండ్" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ]
+  },
+
+  "ui": {
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "legal",
+      "type": "legal",
+      "title": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" },
+      "updated": { "en": "Last updated: June 2026", "te": "చివరిగా నవీకరించబడింది: జూన్ 2026" },
+      "intro": {
+        "en": "Your privacy matters to us. This policy explains what information we collect, how we use it, and your rights when you use our website and services.",
+        "te": "మీ గోప్యత మాకు ముఖ్యం. మీరు మా వెబ్‌సైట్, సేవలను ఉపయోగించినప్పుడు మేము ఏ సమాచారం సేకరిస్తాము, దానిని ఎలా ఉపయోగిస్తాము, మీ హక్కులు ఏమిటో ఈ విధానం వివరిస్తుంది."
+      },
+      "clauses": [
+        {
+          "heading": { "en": "Information We Collect", "te": "మేము సేకరించే సమాచారం" },
+          "body": [
+            { "en": "We may collect your name, email, phone number, location and any details you share when you register, message us, or join a workshop or session.", "te": "మీరు నమోదు చేసుకున్నప్పుడు, మాకు సందేశం పంపినప్పుడు, లేదా వర్క్‌షాప్/సెషన్‌లో చేరినప్పుడు మీ పేరు, ఇమెయిల్, ఫోన్ నంబర్, ప్రదేశం, మీరు పంచుకునే వివరాలను మేము సేకరించవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "How We Use Your Information", "te": "మీ సమాచారాన్ని మేము ఎలా ఉపయోగిస్తాము" },
+          "body": [
+            { "en": "We use your information to deliver our services, send workshop details and reminders, respond to your queries, process payments, and improve our offerings.", "te": "మా సేవలను అందించడానికి, వర్క్‌షాప్ వివరాలు, రిమైండర్‌లు పంపడానికి, మీ ప్రశ్నలకు స్పందించడానికి, చెల్లింపులను ప్రాసెస్ చేయడానికి, మా సేవలను మెరుగుపరచడానికి మీ సమాచారాన్ని ఉపయోగిస్తాము." }
+          ]
+        },
+        {
+          "heading": { "en": "Consent", "te": "సమ్మతి" },
+          "body": [
+            { "en": "By sharing your information with us, you consent to its use as described in this policy. You may withdraw consent at any time by contacting us.", "te": "మీ సమాచారాన్ని మాతో పంచుకోవడం ద్వారా, ఈ విధానంలో వివరించిన విధంగా దాని వినియోగానికి మీరు సమ్మతిస్తారు. మమ్మల్ని సంప్రదించడం ద్వారా ఎప్పుడైనా సమ్మతిని ఉపసంహరించుకోవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Sharing & Disclosure", "te": "భాగస్వామ్యం & వెల్లడి" },
+          "body": [
+            { "en": "We do not sell your personal data. We may share it only with trusted service providers (e.g. payment or email tools) who help us operate, or where required by law.", "te": "మేము మీ వ్యక్తిగత డేటాను అమ్మము. మాకు సహాయపడే విశ్వసనీయ సేవా ప్రదాతలతో (ఉదా. చెల్లింపు లేదా ఇమెయిల్ టూల్స్) లేదా చట్టం అవసరమైన చోట మాత్రమే పంచుకోవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Cookies & Analytics", "te": "కుకీలు & అనలిటిక్స్" },
+          "body": [
+            { "en": "Our site may use cookies and analytics tools to understand usage and improve your experience. You can control cookies through your browser settings.", "te": "మా సైట్ వినియోగాన్ని అర్థం చేసుకోవడానికి, మీ అనుభవాన్ని మెరుగుపరచడానికి కుకీలు, అనలిటిక్స్ టూల్స్ ఉపయోగించవచ్చు. మీ బ్రౌజర్ సెట్టింగ్‌ల ద్వారా కుకీలను నియంత్రించవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Data Security & Retention", "te": "డేటా భద్రత & నిల్వ" },
+          "body": [
+            { "en": "We take reasonable measures to protect your information and keep it only as long as needed for the purposes above or as required by law.", "te": "మీ సమాచారాన్ని రక్షించడానికి సహేతుకమైన చర్యలు తీసుకుంటాము, పైన పేర్కొన్న ప్రయోజనాలకు అవసరమైనంత కాలం లేదా చట్టం అవసరమైనంత కాలం మాత్రమే ఉంచుతాము." }
+          ]
+        },
+        {
+          "heading": { "en": "Your Rights", "te": "మీ హక్కులు" },
+          "body": [
+            { "en": "You may request access to, correction of, or deletion of your personal data, and you may opt out of marketing messages at any time.", "te": "మీ వ్యక్తిగత డేటాకు యాక్సెస్, సవరణ లేదా తొలగింపును అభ్యర్థించవచ్చు, మార్కెటింగ్ సందేశాల నుండి ఎప్పుడైనా నిష్క్రమించవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Children's Privacy", "te": "పిల్లల గోప్యత" },
+          "body": [
+            { "en": "Our services are intended for adults. We do not knowingly collect data from children without parental consent.", "te": "మా సేవలు పెద్దల కోసం ఉద్దేశించబడ్డాయి. తల్లిదండ్రుల సమ్మతి లేకుండా పిల్లల నుండి డేటాను మేము తెలిసి సేకరించము." }
+          ]
+        },
+        {
+          "heading": { "en": "Changes & Contact", "te": "మార్పులు & సంప్రదింపు" },
+          "body": [
+            { "en": "We may update this policy from time to time. For privacy questions or requests, email rvvedikaraksha@gmail.com or call/WhatsApp +91 80745 40299.", "te": "మేము ఈ విధానాన్ని ఎప్పటికప్పుడు నవీకరించవచ్చు. గోప్యతా ప్రశ్నలు/అభ్యర్థనల కోసం rvvedikaraksha@gmail.com కు ఇమెయిల్ చేయండి లేదా +91 80745 40299 కు కాల్/వాట్సాప్ చేయండి." }
+          ]
+        }
+      ],
+      "note": {
+        "en": "This document is a general template provided for convenience and is not legal advice. Please have it reviewed by a qualified professional before relying on it.",
+        "te": "ఈ పత్రం సౌలభ్యం కోసం అందించిన సాధారణ టెంప్లేట్, చట్టపరమైన సలహా కాదు. దీనిపై ఆధారపడే ముందు అర్హత కలిగిన నిపుణుడిచే సమీక్షించబడాలి."
+      }
+    }
+  ],
+
+  "footer": {
+    "legalLinks": [
+      { "label": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "label": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "label": { "en": "Refund & Cancellation", "te": "రీఫండ్ & రద్దు" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ],
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}

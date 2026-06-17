@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="l3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#caa0c0"/><stop offset="1" stop-color="#8a2d52"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#l3)"/>
+  <circle cx="640" cy="380" r="170" fill="#ffffff" opacity="0.18"/>
+  <g fill="none" stroke="#fff7fa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M400 320c-60 0-100-38-100-74 27-13 52-13 69 0 0-25 9-50 31-67 22 17 31 42 31 67 17-13 42-13 69 0 0 36-40 74-100 74z"/>
+  </g>
+  <text x="60" y="420" font-family="Georgia, serif" font-size="40" fill="#fff7fa" opacity="0.95">Emotional Healing</text>
+  <text x="60" y="120" font-family="Georgia, serif" font-size="120" fill="#fff7fa" opacity="0.22">3</text>
+</svg>

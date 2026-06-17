@@ -1,0 +1,33 @@
+{
+  "name": "vedika-raksha-profilo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Profilo Designer — a JSON-driven, bilingual (English/Telugu) React profile template. No backend. First client: Vedika Raksha, Women's Empowerment Coach & Wellness Mentor (Vedika Raksha Empowerment Academy).",
+  "author": "Vedika Raksha Empowerment Academy",
+  "keywords": [
+    "women-empowerment",
+    "confidence-coaching",
+    "mindset",
+    "emotional-wellbeing",
+    "wellness-mentor",
+    "react",
+    "vite",
+    "bilingual",
+    "telugu"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

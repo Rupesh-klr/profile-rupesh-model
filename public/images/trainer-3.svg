@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="t3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#caa0c0"/><stop offset="1" stop-color="#8a2d52"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#t3)"/>
+  <circle cx="300" cy="170" r="70" fill="#fff7fa" opacity="0.9"/>
+  <path d="M180 420c0-70 54-120 120-120s120 50 120 120z" fill="#fff7fa" opacity="0.9"/>
+  <text x="300" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#fff7fa" opacity="0.75">Replace → trainer-3</text>
+</svg>

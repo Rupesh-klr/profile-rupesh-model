@@ -1,0 +1,40 @@
+# ---- Dependencies ----
+node_modules/
+.pnp
+.pnp.js
+.npm
+
+# ---- Build output ----
+dist/
+dist-ssr/
+build/
+*.local
+
+# ---- Deploy artifacts (created by Build-Deploy-Zip.bat) ----
+Profilo-Designer_*.zip
+*.zip
+
+# ---- Environment / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Logs ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Editor / OS / tooling ----
+.claude/settings.local.json
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

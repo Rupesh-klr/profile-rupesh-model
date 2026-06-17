@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "templateVersion": "1.0.0",
+    "client": "Vedika Raksha",
+    "page": "profile",
+    "note": "Vedika Raksha's personal/professional profile — Women's Empowerment & Wellness. Single source of truth; every text field is bilingual { en, te }. Replace /public/images/* with real photos using the same file names."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "honorific": { "en": "RV Vedika Raksha", "te": "ఆర్‌వి వేదిక రక్ష" },
+    "title": { "en": "Women's Empowerment Coach & Wellness Mentor", "te": "మహిళా సాధికారత కోచ్ & వెల్‌నెస్ మెంటర్" },
+    "subtitle": { "en": "Mindset, Confidence & Emotional Wellbeing Mentor", "te": "మనోభావం, ఆత్మవిశ్వాసం & భావోద్వేగ శ్రేయస్సు మెంటర్" },
+    "tagline": {
+      "en": "Helping women rediscover their confidence, purpose and power to create a fulfilling, independent life.",
+      "te": "మహిళలు తమ ఆత్మవిశ్వాసం, లక్ష్యం, శక్తిని తిరిగి కనుగొని, సంతృప్తికరమైన, స్వతంత్ర జీవితాన్ని నిర్మించుకునేలా సహాయం చేయడం."
+    },
+    "location": { "en": "Hyderabad, India", "te": "హైదరాబాద్, భారతదేశం" },
+    "address": {
+      "en": "Vedika Raksha Empowerment Academy, KY Residency, Block C, Bachupally, Hyderabad, Telangana 500090",
+      "te": "వేదిక రక్ష ఎంపవర్‌మెంట్ అకాడమీ, కేవై రెసిడెన్సీ, బ్లాక్ సి, బాచుపల్లి, హైదరాబాద్, తెలంగాణ 500090"
+    },
+    "primaryLanguage": { "en": "Speaks Telugu", "te": "తెలుగులో మాట్లాడుతారు" },
+    "images": [
+      { "src": "/images/vedika-raksha-profile.jpg", "alt": { "en": "Vedika Raksha — portrait", "te": "వేదిక రక్ష — చిత్రం" } },
+      { "src": "/images/vedika-2.svg", "alt": { "en": "Vedika Raksha — mentoring session", "te": "వేదిక రక్ష — మెంటరింగ్ సెషన్" } },
+      { "src": "/images/vedika-3.svg", "alt": { "en": "Vedika Raksha — speaking at a workshop", "te": "వేదిక రక్ష — వర్క్‌షాప్‌లో మాట్లాడుతున్నారు" } }
+    ],
+    "social": [
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/918074540299", "handle": "WhatsApp" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "about", "label": { "en": "About", "te": "గురించి" } },
+      { "id": "concept", "label": { "en": "Approach", "te": "విధానం" } },
+      { "id": "offerings", "label": { "en": "Programs", "te": "ప్రోగ్రామ్‌లు" } },
+      { "id": "team", "label": { "en": "Mentors", "te": "మెంటర్లు" } },
+      { "id": "contact", "label": { "en": "Contact", "te": "సంప్రదించండి" } },
+      { "id": "workshop", "label": { "en": "Workshop ↗", "te": "వర్క్‌షాప్ ↗" }, "route": "/vedika-raksha-new-page" }
+    ]
+  },
+
+  "ui": {
+    "registerUrl": "https://www.instagram.com/rvvedikaraksha",
+    "cta": { "en": "DM “Rise” to begin", "te": "ప్రారంభించడానికి “Rise” అని DM చేయండి" },
+    "ctaSecondary": { "en": "Explore my programs", "te": "నా ప్రోగ్రామ్‌లు చూడండి" },
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "attention": {
+        "en": "Women's Empowerment · Confidence · Mindset · Emotional Wellbeing",
+        "te": "మహిళా సాధికారత · ఆత్మవిశ్వాసం · మనోభావం · భావోద్వేగ శ్రేయస్సు"
+      },
+      "headline": {
+        "en": "Helping women rediscover their confidence & power",
+        "te": "మహిళలు తమ ఆత్మవిశ్వాసం, శక్తిని తిరిగి కనుగొనేలా"
+      },
+      "headlineAccent": {
+        "en": "Confidence · Clarity · Purpose · Independence",
+        "te": "ఆత్మవిశ్వాసం · స్పష్టత · లక్ష్యం · స్వాతంత్ర్యం"
+      },
+      "description": {
+        "en": "Gentle, grounded coaching for women ready to overcome self-doubt, find clarity, and rise into a confident, independent and purpose-driven life.",
+        "te": "ఆత్మ-సందేహాన్ని అధిగమించి, స్పష్టత పొంది, ఆత్మవిశ్వాసం, స్వాతంత్ర్యం, లక్ష్యంతో కూడిన జీవితంలోకి ఎదగాలనుకునే మహిళలకు సున్నితమైన, స్థిరమైన కోచింగ్."
+      },
+      "highlights": [
+        { "icon": "spark", "label": { "en": "Role", "te": "పాత్ర" }, "value": { "en": "Empowerment Coach", "te": "ఎంపవర్‌మెంట్ కోచ్" } },
+        { "icon": "pin", "label": { "en": "Based in", "te": "ఉన్న ప్రదేశం" }, "value": { "en": "Hyderabad", "te": "హైదరాబాద్" } },
+        { "icon": "heart", "label": { "en": "Empowered", "te": "సాధికారత" }, "value": { "en": "1000+ women", "te": "1000+ మహిళలు" } },
+        { "icon": "language", "label": { "en": "Language", "te": "భాష" }, "value": { "en": "Telugu", "te": "తెలుగు" } }
+      ]
+    },
+
+    {
+      "id": "stats",
+      "type": "stats",
+      "items": [
+        { "value": 1000, "suffix": "+", "label": { "en": "Women Empowered", "te": "సాధికారత పొందిన మహిళలు" } },
+        { "value": 100, "suffix": "+", "label": { "en": "Workshops Conducted", "te": "నిర్వహించిన వర్క్‌షాప్‌లు" } },
+        { "value": 10000, "suffix": "+", "label": { "en": "Community Members", "te": "సముదాయ సభ్యులు" } }
+      ]
+    },
+
+    {
+      "id": "about",
+      "type": "about",
+      "greeting": { "en": "Namaste 🙏", "te": "నమస్తే 🙏" },
+      "heading": { "en": "I am RV Vedika Raksha", "te": "నేను ఆర్‌వి వేదిక రక్ష" },
+      "paragraphs": [
+        {
+          "en": "I'm a women's empowerment coach and wellness mentor. I help women overcome self-doubt, unlock their potential, and create meaningful transformation in their personal and professional lives — through coaching, mentoring and a supportive community.",
+          "te": "నేను ఒక మహిళా సాధికారత కోచ్, వెల్‌నెస్ మెంటర్‌ని. కోచింగ్, మెంటరింగ్, మద్దతు ఇచ్చే సముదాయం ద్వారా — మహిళలు ఆత్మ-సందేహాన్ని అధిగమించి, తమ సామర్థ్యాన్ని వెలికితీసి, తమ వ్యక్తిగత, వృత్తిపరమైన జీవితంలో అర్థవంతమైన మార్పును సృష్టించుకునేలా సహాయం చేస్తాను."
+        },
+        {
+          "en": "My journey began with a deep desire to support women who felt stuck or disconnected from their true potential. Working with women from many backgrounds taught me that confidence and clarity can transform lives — so I built a space where women can heal, grow, learn new skills and build a life they truly love.",
+          "te": "ఇరుక్కుపోయినట్లు లేదా తమ నిజమైన సామర్థ్యం నుండి దూరమైనట్లు భావించే మహిళలకు తోడ్పడాలనే గాఢమైన కోరికతో నా ప్రయాణం మొదలైంది. వివిధ నేపథ్యాల మహిళలతో పనిచేయడం — ఆత్మవిశ్వాసం, స్పష్టత జీవితాలను మార్చగలవని నాకు నేర్పింది. అందుకే మహిళలు స్వస్థత పొంది, ఎదిగి, కొత్త నైపుణ్యాలు నేర్చుకుని, తాము నిజంగా ఇష్టపడే జీవితాన్ని నిర్మించుకునే ఒక వేదికను నేను రూపొందించాను."
+        }
+      ],
+      "credentials": [
+        { "en": "Empowered 1000+ women across India and the global Telugu community", "te": "భారతదేశం అంతటా, ప్రపంచ తెలుగు సముదాయంలో 1000+ మహిళలకు సాధికారత" },
+        { "en": "Confidence, mindset & emotional wellbeing mentor", "te": "ఆత్మవిశ్వాసం, మనోభావం & భావోద్వేగ శ్రేయస్సు మెంటర్" },
+        { "en": "Conducted 100+ transformational workshops & sessions", "te": "100+ పరివర్తనాత్మక వర్క్‌షాప్‌లు & సెషన్లు నిర్వహించారు" },
+        { "en": "Creator of a structured women's empowerment framework", "te": "ఒక నిర్మాణాత్మక మహిళా సాధికారత ఫ్రేమ్‌వర్క్ రూపకర్త" }
+      ]
+    },
+
+    {
+      "id": "concept",
+      "type": "statement",
+      "number": "01",
+      "icon": "spark",
+      "eyebrow": { "en": "My Approach", "te": "నా విధానం" },
+      "heading": { "en": "When a woman transforms herself, she transforms generations", "te": "ఒక మహిళ తనను తాను మార్చుకున్నప్పుడు, ఆమె తరాలను మారుస్తుంది" },
+      "body": [
+        {
+          "en": "At the heart of my work is a simple belief: confidence and clarity change everything. Instead of quick fixes, we work gently on your mindset, emotions and self-worth — so growth is real, grounded and lasting.",
+          "te": "నా పనికి మూలంలో ఒక సరళమైన నమ్మకం ఉంది: ఆత్మవిశ్వాసం, స్పష్టత ప్రతిదాన్నీ మారుస్తాయి. తాత్కాలిక పరిష్కారాల బదులు, మీ మనోభావం, భావోద్వేగాలు, ఆత్మగౌరవంపై సున్నితంగా పనిచేస్తాం — తద్వారా ఎదుగుదల నిజమైనది, స్థిరమైనది, శాశ్వతమైనది అవుతుంది."
+        },
+        {
+          "en": "Love, health, growth and financial independence are not separate goals — through the Vedika Transformation Framework, they grow together as you step into your power.",
+          "te": "ప్రేమ, ఆరోగ్యం, ఎదుగుదల, ఆర్థిక స్వాతంత్ర్యం వేర్వేరు లక్ష్యాలు కాదు — వేదిక ట్రాన్స్‌ఫర్మేషన్ ఫ్రేమ్‌వర్క్ ద్వారా, మీరు మీ శక్తిలోకి అడుగుపెడుతున్నప్పుడు అవి కలిసి ఎదుగుతాయి."
+        }
+      ],
+      "points": [
+        { "en": "Confidence & mindset transformation", "te": "ఆత్మవిశ్వాసం & మనోభావ పరివర్తన" },
+        { "en": "Emotional wellbeing & support", "te": "భావోద్వేగ శ్రేయస్సు & మద్దతు" },
+        { "en": "Clarity, purpose & goal-setting", "te": "స్పష్టత, లక్ష్యం & గోల్-సెట్టింగ్" },
+        { "en": "Growth and independence, together", "te": "ఎదుగుదల, స్వాతంత్ర్యం — కలిసి" }
+      ]
+    },
+
+    {
+      "id": "mission",
+      "type": "statement",
+      "reverse": true,
+      "number": "02",
+      "icon": "heart",
+      "eyebrow": { "en": "My Mission", "te": "నా లక్ష్యం" },
+      "heading": { "en": "Empowering 1,00,000 women globally", "te": "ప్రపంచవ్యాప్తంగా 1,00,000 మంది మహిళలకు సాధికారత" },
+      "body": [
+        {
+          "en": "To empower women with confidence, skills, mindset and opportunities so they can create independent, meaningful and successful lives — with clarity, courage and self-belief.",
+          "te": "మహిళలను ఆత్మవిశ్వాసం, నైపుణ్యాలు, మనోభావం, అవకాశాలతో శక్తివంతం చేసి — స్పష్టత, ధైర్యం, ఆత్మ-నమ్మకంతో స్వతంత్ర, అర్థవంతమైన, విజయవంతమైన జీవితాలను సృష్టించుకునేలా చేయడం."
+        },
+        {
+          "en": "Every woman deserves to recognise her worth, discover her potential and contribute confidently to the world — and I am here to walk that path with her.",
+          "te": "ప్రతి మహిళ తన విలువను గుర్తించి, తన సామర్థ్యాన్ని కనుగొని, ప్రపంచానికి ఆత్మవిశ్వాసంతో దోహదపడటానికి అర్హురాలు — ఆ మార్గంలో ఆమెతో కలిసి నడవడానికి నేను ఇక్కడ ఉన్నాను."
+        }
+      ]
+    },
+
+    {
+      "id": "vision",
+      "type": "statement",
+      "number": "03",
+      "icon": "compass",
+      "eyebrow": { "en": "My Vision", "te": "నా దృక్పథం" },
+      "heading": { "en": "A world of confident, independent women", "te": "ఆత్మవిశ్వాసం గల, స్వతంత్ర మహిళల ప్రపంచం" },
+      "body": [
+        {
+          "en": "I envision a future where every woman recognises her worth and has access to mentorship, skills and the support she needs to be confident and financially independent — no matter where she comes from.",
+          "te": "ప్రతి మహిళ తన విలువను గుర్తించి — ఆమె ఎక్కడి నుండి వచ్చినా — ఆత్మవిశ్వాసంతో, ఆర్థికంగా స్వతంత్రంగా ఉండటానికి అవసరమైన మెంటర్‌షిప్, నైపుణ్యాలు, మద్దతు అందుబాటులో ఉండే భవిష్యత్తును నేను ఊహిస్తాను."
+        },
+        {
+          "en": "Through workshops, a growing community and — in time — an online academy and give-back programs, my vision is to build a leading Telugu women's empowerment platform that reaches millions.",
+          "te": "వర్క్‌షాప్‌లు, ఎదుగుతున్న సముదాయం, కాలక్రమంలో ఒక ఆన్‌లైన్ అకాడమీ, తిరిగి ఇచ్చే కార్యక్రమాల ద్వారా — లక్షలాది మందిని చేరే ఒక ప్రముఖ తెలుగు మహిళా సాధికారత వేదికను నిర్మించడం నా దృక్పథం."
+        }
+      ],
+      "points": [
+        { "en": "An online empowerment academy & trainings", "te": "ఆన్‌లైన్ ఎంపవర్‌మెంట్ అకాడమీ & శిక్షణలు" },
+        { "en": "A supportive women's community", "te": "మద్దతు ఇచ్చే మహిళల సముదాయం" },
+        { "en": "Give-back: free mentoring for those in need", "te": "తిరిగి ఇవ్వడం: అవసరమైనవారికి ఉచిత మెంటరింగ్" },
+        { "en": "Reaching rural & underserved women", "te": "గ్రామీణ, సేవలు అందని మహిళలను చేరడం" }
+      ]
+    },
+
+    {
+      "id": "offerings",
+      "type": "cardgrid",
+      "variant": "outcomes",
+      "heading": { "en": "My Programs & Offerings", "te": "నా ప్రోగ్రామ్‌లు & సేవలు" },
+      "subheading": {
+        "en": "From a free confidence challenge to deep 1:1 coaching — choose what fits your journey.",
+        "te": "ఉచిత ఆత్మవిశ్వాస ఛాలెంజ్ నుండి లోతైన 1:1 కోచింగ్ వరకు — మీ ప్రయాణానికి సరిపోయేది ఎంచుకోండి."
+      },
+      "items": [
+        { "icon": "spark", "title": { "en": "Women's Confidence Mastery", "te": "ఉమెన్స్ కాన్ఫిడెన్స్ మాస్టరీ" }, "desc": { "en": "A flagship program to rebuild self-belief, overcome self-doubt and step into your power.", "te": "ఆత్మ-నమ్మకాన్ని పునర్నిర్మించి, ఆత్మ-సందేహాన్ని అధిగమించి, మీ శక్తిలోకి అడుగుపెట్టే ప్రధాన ప్రోగ్రామ్." } },
+        { "icon": "compass", "title": { "en": "Purpose & Growth Coaching", "te": "పర్పస్ & గ్రోత్ కోచింగ్" }, "desc": { "en": "1:1 coaching to find clarity, set meaningful goals and design a life you love.", "te": "స్పష్టత పొంది, అర్థవంతమైన లక్ష్యాలు పెట్టుకుని, మీకు ఇష్టమైన జీవితాన్ని రూపొందించుకునే 1:1 కోచింగ్." } },
+        { "icon": "heart", "title": { "en": "Emotional Freedom Bootcamp", "te": "ఎమోషనల్ ఫ్రీడమ్ బూట్‌క్యాంప్" }, "desc": { "en": "Release stress, fear and guilt — emotional change support to feel light, calm and strong.", "te": "ఒత్తిడి, భయం, అపరాధభావాన్ని విడుదల చేయండి — తేలికగా, ప్రశాంతంగా, బలంగా అనుభూతి చెందేలా భావోద్వేగ మార్పు మద్దతు." } },
+        { "icon": "balance", "title": { "en": "Leadership for Women Workshop", "te": "లీడర్‌షిప్ ఫర్ ఉమెన్ వర్క్‌షాప్" }, "desc": { "en": "Build the mindset, voice and skills to lead — at home, at work and in your community.", "te": "ఇంట్లో, పనిలో, మీ సముదాయంలో నాయకత్వం వహించే మనోభావం, స్వరం, నైపుణ్యాలను పెంపొందించుకోండి." } },
+        { "icon": "report", "title": { "en": "Digital Skills & Income", "te": "డిజిటల్ నైపుణ్యాలు & ఆదాయం" }, "desc": { "en": "Learn practical digital skills and build income streams towards financial independence.", "te": "ఆచరణాత్మక డిజిటల్ నైపుణ్యాలు నేర్చుకుని, ఆర్థిక స్వాతంత్ర్యం వైపు ఆదాయ మార్గాలను నిర్మించుకోండి." } },
+        { "icon": "seed", "title": { "en": "Free 5-Day Confidence Challenge", "te": "ఉచిత 5-రోజుల ఆత్మవిశ్వాస ఛాలెంజ్" }, "desc": { "en": "A free guided challenge — a simple, gentle first step into your transformation.", "te": "ఉచిత మార్గనిర్దేశిత ఛాలెంజ్ — మీ పరివర్తనలోకి ఒక సరళమైన, సున్నితమైన మొదటి అడుగు." } }
+      ]
+    },
+
+    {
+      "id": "team",
+      "type": "team",
+      "heading": { "en": "Meet the Team", "te": "మా బృందాన్ని కలవండి" },
+      "subheading": {
+        "en": "A caring team of coaches and mentors supporting you on your empowerment journey.",
+        "te": "మీ సాధికారత ప్రయాణంలో మీకు తోడ్పడే కోచ్‌లు, మెంటర్ల ఆత్మీయ బృందం."
+      },
+      "moreLabel": { "en": "See more details", "te": "మరిన్ని వివరాలు చూడండి" },
+      "lessLabel": { "en": "Show less", "te": "తక్కువ చూపించు" },
+      "members": [
+        {
+          "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+          "role": { "en": "Founder · Women's Empowerment Coach", "te": "వ్యవస్థాపకురాలు · మహిళా సాధికారత కోచ్" },
+          "image": "/images/trainer-1.svg",
+          "basics": [
+            { "icon": "spark", "en": "7+ yrs", "te": "7+ సం" },
+            { "icon": "heart", "en": "1000+ empowered", "te": "1000+ సాధికారత" },
+            { "icon": "language", "en": "Telugu", "te": "తెలుగు" }
+          ],
+          "summary": {
+            "en": "Empowerment coach specialising in confidence, mindset transformation and emotional wellbeing.",
+            "te": "ఆత్మవిశ్వాసం, మనోభావ పరివర్తన, భావోద్వేగ శ్రేయస్సులో నిపుణురాలైన సాధికారత కోచ్."
+          },
+          "details": {
+            "en": "Vedika blends mindset coaching, personalised growth guidance and a supportive community. She has empowered 1000+ women across India and the global Telugu community to move from self-doubt towards confidence, clarity and independence.",
+            "te": "వేదిక మైండ్‌సెట్ కోచింగ్, వ్యక్తిగత ఎదుగుదల మార్గదర్శనం, మద్దతు ఇచ్చే సముదాయాన్ని కలుపుతారు. భారతదేశం అంతటా, ప్రపంచ తెలుగు సముదాయంలో 1000+ మహిళలు ఆత్మ-సందేహం నుండి ఆత్మవిశ్వాసం, స్పష్టత, స్వాతంత్ర్యం వైపు సాగేలా సాధికారత కల్పించారు."
+          }
+        },
+        {
+          "name": { "en": "Ananya Rao", "te": "అనన్య రావు" },
+          "role": { "en": "Emotional Wellbeing Counsellor", "te": "భావోద్వేగ శ్రేయస్సు కౌన్సెలర్" },
+          "image": "/images/trainer-2.svg",
+          "basics": [
+            { "icon": "spark", "en": "5+ yrs", "te": "5+ సం" },
+            { "icon": "heart", "en": "Counselling", "te": "కౌన్సెలింగ్" }
+          ],
+          "summary": {
+            "en": "Helps women release fear, guilt and anxiety through compassionate, judgement-free counselling.",
+            "te": "కరుణతో, తీర్పు లేని కౌన్సెలింగ్ ద్వారా మహిళలు భయం, అపరాధభావం, ఆందోళనను విడుదల చేసేలా సహాయం చేస్తారు."
+          },
+          "details": {
+            "en": "Ananya guides clients through emotional blocks and stressful life transitions with practical tools and deep listening, creating a safe, calm space for growth. (Sample profile — replace with your real team member.)",
+            "te": "అనన్య ఆచరణాత్మక సాధనాలు, లోతైన శ్రవణంతో భావోద్వేగ అడ్డంకులు, ఒత్తిడితో కూడిన జీవిత మార్పుల్లో క్లయింట్లకు మార్గనిర్దేశం చేస్తారు. (నమూనా ప్రొఫైల్ — మీ నిజమైన టీమ్ సభ్యునితో మార్చండి.)"
+          }
+        },
+        {
+          "name": { "en": "Sneha Reddy", "te": "స్నేహ రెడ్డి" },
+          "role": { "en": "Skills & Confidence Mentor", "te": "నైపుణ్యాలు & ఆత్మవిశ్వాస మెంటర్" },
+          "image": "/images/trainer-3.svg",
+          "basics": [
+            { "icon": "report", "en": "Digital skills", "te": "డిజిటల్ నైపుణ్యాలు" },
+            { "icon": "spark", "en": "Growth", "te": "ఎదుగుదల" }
+          ],
+          "summary": {
+            "en": "Helps women build practical digital skills and the confidence to create their own income.",
+            "te": "మహిళలు ఆచరణాత్మక డిజిటల్ నైపుణ్యాలు, తమ సొంత ఆదాయాన్ని సృష్టించుకునే ఆత్మవిశ్వాసాన్ని పెంపొందించుకునేలా సహాయం చేస్తారు."
+          },
+          "details": {
+            "en": "Sneha turns new skills into real confidence — guiding women step by step to learn, practise and earn, so independence feels achievable. (Sample profile — replace with your real team member.)",
+            "te": "స్నేహ కొత్త నైపుణ్యాలను నిజమైన ఆత్మవిశ్వాసంగా మారుస్తారు — నేర్చుకోవడం, సాధన చేయడం, సంపాదించడంలో మహిళలకు అడుగడుగునా మార్గనిర్దేశం చేస్తారు, తద్వారా స్వాతంత్ర్యం సాధించదగినదిగా అనిపిస్తుంది. (నమూనా ప్రొఫైల్ — మీ నిజమైన టీమ్ సభ్యునితో మార్చండి.)"
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "help",
+      "type": "cardgrid",
+      "variant": "audience",
+      "heading": { "en": "How I Help You", "te": "నేను మీకు ఎలా సహాయం చేస్తాను" },
+      "subheading": {
+        "en": "A holistic path that works with your mindset, emotions, skills and goals together.",
+        "te": "మీ మనోభావం, భావోద్వేగాలు, నైపుణ్యాలు, లక్ష్యాలను కలిపి పనిచేసే సమగ్ర మార్గం."
+      },
+      "items": [
+        { "icon": "spark", "title": { "en": "Confidence Building", "te": "ఆత్మవిశ్వాస నిర్మాణం" }, "desc": { "en": "Overcome self-doubt, find your voice and believe in yourself again.", "te": "ఆత్మ-సందేహాన్ని అధిగమించి, మీ స్వరాన్ని కనుగొని, మీపై మీరు మళ్లీ నమ్మకం పెట్టుకోండి." } },
+        { "icon": "compass", "title": { "en": "Mindset Transformation", "te": "మనోభావ పరివర్తన" }, "desc": { "en": "Shift limiting beliefs and step into clarity, courage and possibility.", "te": "పరిమితం చేసే నమ్మకాలను మార్చి, స్పష్టత, ధైర్యం, అవకాశాలలోకి అడుగు పెట్టండి." } },
+        { "icon": "heart", "title": { "en": "Emotional Wellbeing & Support", "te": "భావోద్వేగ శ్రేయస్సు & మద్దతు" }, "desc": { "en": "Release stress, fear and overwhelm with gentle emotional change support.", "te": "సున్నితమైన భావోద్వేగ మార్పు మద్దతుతో ఒత్తిడి, భయం, అలసటను విడుదల చేయండి." } },
+        { "icon": "seed", "title": { "en": "Goal Setting & Clarity", "te": "గోల్ సెట్టింగ్ & స్పష్టత" }, "desc": { "en": "Turn confusion into a clear, doable plan for the life you want.", "te": "గందరగోళాన్ని మీరు కోరుకునే జీవితానికి స్పష్టమైన, సాధ్యమైన ప్రణాళికగా మార్చండి." } },
+        { "icon": "balance", "title": { "en": "Leadership Development", "te": "నాయకత్వ అభివృద్ధి" }, "desc": { "en": "Grow the courage and skills to lead at home, at work and beyond.", "te": "ఇంట్లో, పనిలో, అంతకు మించి నాయకత్వం వహించే ధైర్యం, నైపుణ్యాలను పెంచుకోండి." } },
+        { "icon": "report", "title": { "en": "Digital Skills & Income", "te": "డిజిటల్ నైపుణ్యాలు & ఆదాయం" }, "desc": { "en": "Build skills and income streams that lead to financial independence.", "te": "ఆర్థిక స్వాతంత్ర్యానికి దారితీసే నైపుణ్యాలు, ఆదాయ మార్గాలను నిర్మించుకోండి." } }
+      ]
+    },
+
+    {
+      "id": "stories",
+      "type": "testimonials",
+      "heading": { "en": "Real Women. Real Transformations.", "te": "నిజమైన మహిళలు. నిజమైన మార్పులు." },
+      "subheading": {
+        "en": "A few words from women who found confidence, clarity and direction.",
+        "te": "ఆత్మవిశ్వాసం, స్పష్టత, దిశను పొందిన మహిళల కొన్ని మాటలు."
+      },
+      "items": [
+        {
+          "quote": { "en": "Vedika helped me regain my confidence and start believing in myself again. I finally feel ready to chase what I want.", "te": "వేదిక నా ఆత్మవిశ్వాసాన్ని తిరిగి పొందడంలో, మళ్లీ నాపై నేను నమ్మకం పెట్టుకోవడంలో సహాయపడింది. నేను కోరుకున్నదాన్ని సాధించడానికి చివరికి సిద్ధంగా ఉన్నట్లు అనిపిస్తోంది." },
+          "author": { "en": "Anitha", "te": "అనిత" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "Her guidance completely transformed my mindset and helped me take real action instead of staying stuck.", "te": "ఆమె మార్గదర్శనం నా మనోభావాన్ని పూర్తిగా మార్చింది, ఇరుక్కుపోకుండా నిజమైన చర్య తీసుకునేలా సహాయపడింది." },
+          "author": { "en": "Sravani", "te": "శ్రావణి" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "I found clarity, confidence and a supportive community I can grow with. It changed how I see myself.", "te": "నేను స్పష్టత, ఆత్మవిశ్వాసం, నేను కలిసి ఎదగగల మద్దతు ఇచ్చే సముదాయాన్ని కనుగొన్నాను. నన్ను నేను చూసుకునే విధానాన్ని ఇది మార్చింది." },
+          "author": { "en": "Lakshmi", "te": "లక్ష్మి" },
+          "rating": 5
+        }
+      ],
+      "note": {
+        "en": "Experiences vary from person to person. These reflect personal journeys, not guaranteed outcomes.",
+        "te": "అనుభవాలు వ్యక్తికి వ్యక్తికి మారతాయి. ఇవి వ్యక్తిగత ప్రయాణాలను సూచిస్తాయి, హామీ ఇచ్చిన ఫలితాలు కాదు."
+      }
+    },
+
+    {
+      "id": "contact",
+      "type": "contact",
+      "heading": { "en": "Connect With Me", "te": "నాతో కనెక్ట్ అవ్వండి" },
+      "subheading": {
+        "en": "Reach out, ask a question, or just say hello — I'd love to hear from you.",
+        "te": "సంప్రదించండి, ప్రశ్న అడగండి, లేదా పలకరించండి — మీ నుండి వినడానికి ఇష్టపడతాను."
+      },
+      "items": [
+        { "icon": "mail", "label": { "en": "Email", "te": "ఇమెయిల్" }, "value": { "en": "rvvedikaraksha@gmail.com", "te": "rvvedikaraksha@gmail.com" }, "href": "mailto:rvvedikaraksha@gmail.com" },
+        { "icon": "whatsapp", "label": { "en": "Call / WhatsApp", "te": "కాల్ / వాట్సాప్" }, "value": { "en": "+91 80745 40299", "te": "+91 80745 40299" }, "href": "https://wa.me/918074540299" },
+        { "icon": "pin", "label": { "en": "Academy Address", "te": "అకాడమీ చిరునామా" }, "value": { "en": "KY Residency, Block C, Bachupally, Hyderabad, Telangana 500090", "te": "కేవై రెసిడెన్సీ, బ్లాక్ సి, బాచుపల్లి, హైదరాబాద్, తెలంగాణ 500090" } },
+        { "icon": "instagram", "label": { "en": "Instagram", "te": "ఇన్‌స్టాగ్రామ్" }, "value": { "en": "@rvvedikaraksha", "te": "@rvvedikaraksha" }, "href": "https://www.instagram.com/rvvedikaraksha" }
+      ]
+    },
+
+    {
+      "id": "cta",
+      "type": "cta",
+      "heading": { "en": "Ready to rise into your power?", "te": "మీ శక్తిలోకి ఎదగడానికి సిద్ధంగా ఉన్నారా?" },
+      "subheading": {
+        "en": "DM “Rise” to begin your journey — confident, clear and supported, one step at a time.",
+        "te": "మీ ప్రయాణాన్ని ప్రారంభించడానికి “Rise” అని DM చేయండి — ఒక్కో అడుగు, ఆత్మవిశ్వాసం, స్పష్టత, మద్దతుతో."
+      }
+    }
+  ],
+
+  "footer": {
+    "legalLinks": [
+      { "label": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "label": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "label": { "en": "Refund & Cancellation", "te": "రీఫండ్ & రద్దు" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ],
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}

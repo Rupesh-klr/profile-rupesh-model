@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="l1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdeee6"/><stop offset="1" stop-color="#d98aa0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#l1)"/>
+  <circle cx="640" cy="120" r="160" fill="#ffffff" opacity="0.25"/>
+  <g fill="none" stroke="#8a2d52" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <circle cx="400" cy="240" r="70"/><path d="M400 240v-40M400 240l30 22"/>
+  </g>
+  <text x="60" y="420" font-family="Georgia, serif" font-size="44" fill="#6f2342" opacity="0.9">Root Cause</text>
+  <text x="60" y="120" font-family="Georgia, serif" font-size="120" fill="#8a2d52" opacity="0.18">1</text>
+</svg>

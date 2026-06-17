@@ -1,0 +1,73 @@
+# ============================================================
+#  Profilo Designer — Hostinger / Apache / LiteSpeed config
+#  Place this at the web root (public_html). It ships inside
+#  every production build (it lives in /public, copied to /dist).
+# ============================================================
+
+# ---- React SPA fallback -------------------------------------
+# Redirect every non-file, non-folder request to index.html.
+# Works on Apache and LiteSpeed (Hostinger default engine).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Pass requests for real files and directories straight through
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Everything else -> index.html (the SPA handles the path)
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ---- Force HTTPS (optional) ---------------------------------
+# Hostinger gives a free SSL certificate. Uncomment to force https.
+# <IfModule mod_rewrite.c>
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# ---- Gzip / Brotli compression ------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2
+</IfModule>
+
+# ---- Browser caching ----------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Hashed JS/CSS assets can be cached for a year
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 6 months"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType font/woff2 "access plus 1 year"
+  # HTML should always be revalidated so updates show immediately
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|svg|webp|jpg|jpeg|png|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # ---- Basic security headers ----
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ---- Pretty error fallback ----------------------------------
+ErrorDocument 404 /index.html
+
+# ---- Block access to source/meta files (if ever uploaded) ---
+<FilesMatch "(^\.|package(-lock)?\.json$|vite\.config\.js$|\.md$)">
+  Require all denied
+</FilesMatch>

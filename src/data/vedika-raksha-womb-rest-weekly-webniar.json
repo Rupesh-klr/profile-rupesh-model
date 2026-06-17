@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "templateVersion": "1.0.0",
+    "client": "Vedika Raksha",
+    "page": "womb-rest-workshop",
+    "note": "Single source of truth for this profile. Every text field is bilingual { en, te }. Edit this file to rebuild the whole site — no code changes needed. Replace /public/images/* with real photos using the same file names."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "honorific": { "en": "RV Vedika Raksha", "te": "ఆర్‌వి వేదిక రక్ష" },
+    "title": {
+      "en": "Womb Healing & Fertility Coach",
+      "te": "గర్భ వైద్యం & ఫెర్టిలిటీ కోచ్"
+    },
+    "subtitle": {
+      "en": "Emotional Healing Specialist",
+      "te": "భావోద్వేగ వైద్య నిపుణురాలు"
+    },
+    "tagline": {
+      "en": "Helping women heal emotionally, understand their body deeply, and move towards motherhood with clarity, confidence and inner balance.",
+      "te": "మహిళలు భావోద్వేగంగా స్వస్థత పొందేలా, తమ శరీరాన్ని లోతుగా అర్థం చేసుకునేలా, స్పష్టత, ఆత్మవిశ్వాసం, అంతర్గత సమతుల్యతతో మాతృత్వం వైపు అడుగు వేసేలా సహాయం చేయడం."
+    },
+    "location": { "en": "Online · Worldwide", "te": "ఆన్‌లైన్ · ప్రపంచవ్యాప్తం" },
+    "primaryLanguage": { "en": "Speaks Telugu", "te": "తెలుగులో మాట్లాడుతారు" },
+    "images": [
+      { "src": "/images/vedika-1.svg", "alt": { "en": "Vedika Raksha — portrait", "te": "వేదిక రక్ష — చిత్రం" } },
+      { "src": "/images/vedika-2.svg", "alt": { "en": "Vedika Raksha — guiding a session", "te": "వేదిక రక్ష — సెషన్ నడుపుతున్నారు" } },
+      { "src": "/images/vedika-3.svg", "alt": { "en": "Vedika Raksha — speaking at a workshop", "te": "వేదిక రక్ష — వర్క్‌షాప్‌లో మాట్లాడుతున్నారు" } }
+    ],
+    "social": [
+      { "id": "website", "label": "Website", "url": "https://live.holistichealervedika.com/", "handle": "holistichealervedika.com" },
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "profile", "label": { "en": "← Profile", "te": "← ప్రొఫైల్" }, "route": "/" },
+      { "id": "about", "label": { "en": "About", "te": "గురించి" } },
+      { "id": "challenges", "label": { "en": "Challenges", "te": "సవాళ్లు" } },
+      { "id": "learn", "label": { "en": "What You'll Learn", "te": "మీరు నేర్చుకునేవి" } },
+      { "id": "outcomes", "label": { "en": "Outcomes", "te": "ఫలితాలు" } },
+      { "id": "testimonials", "label": { "en": "Stories", "te": "కథలు" } },
+      { "id": "faq", "label": { "en": "FAQ", "te": "ప్రశ్నలు" } }
+    ]
+  },
+
+  "ui": {
+    "registerUrl": "https://live.holistichealervedika.com/",
+    "cta": { "en": "Register for Free", "te": "ఉచితంగా నమోదు చేసుకోండి" },
+    "ctaSecondary": { "en": "Connect with Vedika", "te": "వేదికతో కనెక్ట్ అవ్వండి" },
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "attention": {
+        "en": "For women serious about improving their fertility naturally",
+        "te": "సహజంగా తమ ఫెర్టిలిటీని మెరుగుపరచుకోవాలనుకునే మహిళల కోసం"
+      },
+      "headline": {
+        "en": "Trying to conceive but nothing is working?",
+        "te": "గర్భధారణ కోసం ప్రయత్నిస్తున్నారా… కానీ ఏదీ పని చేయడం లేదా?"
+      },
+      "headlineAccent": {
+        "en": "Maybe the real problem isn't your reports — but hidden emotional & lifestyle blocks.",
+        "te": "నిజమైన సమస్య మీ రిపోర్టులు కాదేమో — దాచిన భావోద్వేగ & జీవనశైలి అడ్డంకులే కావచ్చు."
+      },
+      "description": {
+        "en": "A holistic approach to fertility — working with your mind, body and womb together, not against them.",
+        "te": "ఫెర్టిలిటీకి సమగ్ర విధానం — మీ మనసు, శరీరం, గర్భాన్ని ఒకదానికి వ్యతిరేకంగా కాకుండా కలిసి పనిచేయించడం."
+      },
+      "highlights": [
+        { "icon": "calendar", "label": { "en": "Next Workshop", "te": "తదుపరి వర్క్‌షాప్" }, "value": { "en": "30th May 2026", "te": "30 మే 2026" } },
+        { "icon": "clock", "label": { "en": "Time", "te": "సమయం" }, "value": { "en": "2:00 – 5:00 PM IST", "te": "మధ్యాహ్నం 2:00 – 5:00 IST" } },
+        { "icon": "language", "label": { "en": "Language", "te": "భాష" }, "value": { "en": "Telugu", "te": "తెలుగు" } },
+        { "icon": "video", "label": { "en": "Platform", "te": "వేదిక" }, "value": { "en": "Zoom LIVE", "te": "జూమ్ లైవ్" } }
+      ]
+    },
+
+    {
+      "id": "stats",
+      "type": "stats",
+      "items": [
+        { "value": 3, "suffix": "+", "label": { "en": "Years of Experience", "te": "సంవత్సరాల అనుభవం" } },
+        { "value": 3000, "suffix": "+", "label": { "en": "Women Supported in Their Fertility Journey", "te": "ఫెర్టిలిటీ ప్రయాణంలో సహకరించిన మహిళలు" } },
+        { "value": 100000, "suffix": "+", "label": { "en": "Mothers Through Natural Conception — the Mission", "te": "సహజ గర్భధారణ ద్వారా తల్లులు — లక్ష్యం" } }
+      ]
+    },
+
+    {
+      "id": "challenges",
+      "type": "cardgrid",
+      "variant": "problems",
+      "heading": { "en": "Are You Facing These Challenges?", "te": "మీరు ఈ సవాళ్లను ఎదుర్కొంటున్నారా?" },
+      "subheading": {
+        "en": "If any of these feel familiar, you are not alone — and there is a way forward.",
+        "te": "వీటిలో ఏదైనా మీకు పరిచయంగా అనిపిస్తే, మీరు ఒంటరిగా లేరు — ముందుకు ఒక మార్గం ఉంది."
+      },
+      "items": [
+        { "icon": "seed", "title": { "en": "Difficulty Conceiving", "te": "గర్భధారణలో ఇబ్బంది" }, "desc": { "en": "Trying for months or years… but still not seeing a positive result despite your efforts.", "te": "నెలలు లేదా సంవత్సరాలుగా ప్రయత్నిస్తున్నా… ప్రయత్నాలున్నా సానుకూల ఫలితం కనిపించడం లేదు." } },
+        { "icon": "balance", "title": { "en": "Hormonal Imbalance / PCOS / Thyroid", "te": "హార్మోన్ అసమతుల్యత / PCOS / థైరాయిడ్" }, "desc": { "en": "Irregular periods, mood swings, or diagnosed conditions that leave you feeling stuck.", "te": "క్రమం తప్పిన పీరియడ్స్, మూడ్ మార్పులు, లేదా నిర్ధారిత సమస్యలు మిమ్మల్ని ఇరుక్కుపోయినట్లు చేస్తున్నాయి." } },
+        { "icon": "report", "title": { "en": "“Normal Reports” But No Results", "te": "“నార్మల్ రిపోర్టులు” కానీ ఫలితం లేదు" }, "desc": { "en": "Your reports say everything is fine… yet nothing is actually changing.", "te": "మీ రిపోర్టులు అంతా బాగుందని చెబుతున్నాయి… కానీ నిజంగా ఏమీ మారడం లేదు." } },
+        { "icon": "heart", "title": { "en": "Emotional Stress & Anxiety", "te": "భావోద్వేగ ఒత్తిడి & ఆందోళన" }, "desc": { "en": "Constant worry, overthinking, and emotional pressure around pregnancy.", "te": "నిరంతర ఆందోళన, అతిగా ఆలోచించడం, గర్భధారణ చుట్టూ భావోద్వేగ ఒత్తిడి." } },
+        { "icon": "compass", "title": { "en": "Trying Treatments Without Clarity", "te": "స్పష్టత లేకుండా చికిత్సలు" }, "desc": { "en": "You’re following treatments — but don’t fully understand what’s really causing the issue.", "te": "మీరు చికిత్సలు తీసుకుంటున్నారు — కానీ అసలు సమస్యకు కారణం పూర్తిగా అర్థం కావడం లేదు." } },
+        { "icon": "drained", "title": { "en": "Mentally & Emotionally Drained", "te": "మానసికంగా & భావోద్వేగంగా అలసట" }, "desc": { "en": "Every month brings hope… and then disappointment, leaving you exhausted.", "te": "ప్రతి నెల ఆశను తెస్తుంది… తరువాత నిరాశ, మిమ్మల్ని అలసిపోయేలా చేస్తుంది." } },
+        { "icon": "question", "title": { "en": "Confusion About What To Do Next", "te": "తదుపరి ఏం చేయాలో గందరగోళం" }, "desc": { "en": "Too many opinions and advice — but no clear direction that feels right.", "te": "ఎన్నో అభిప్రాయాలు, సలహాలు — కానీ సరైనదని అనిపించే స్పష్టమైన దిశ లేదు." } },
+        { "icon": "couple", "title": { "en": "Relationship Stress Due To Infertility", "te": "సంతానలేమి వల్ల సంబంధ ఒత్తిడి" }, "desc": { "en": "The emotional burden is affecting your connection and communication.", "te": "భావోద్వేగ భారం మీ అనుబంధాన్ని, సంభాషణను ప్రభావితం చేస్తోంది." } },
+        { "icon": "missing", "title": { "en": "Feeling Like Something Is Missing", "te": "ఏదో లోపించినట్లు అనిపించడం" }, "desc": { "en": "You’re doing everything you can… but deep down, it still feels incomplete.", "te": "మీరు చేయగలిగినదంతా చేస్తున్నారు… కానీ లోతుగా, ఇంకా అసంపూర్ణంగా అనిపిస్తోంది." } }
+      ]
+    },
+
+    {
+      "id": "audience",
+      "type": "cardgrid",
+      "variant": "audience",
+      "heading": { "en": "Who This Is Specially Designed For", "te": "ఇది ప్రత్యేకంగా ఎవరి కోసం రూపొందించబడింది" },
+      "subheading": {
+        "en": "Homemakers, working women, entrepreneurs and teenagers — anyone ready to support their fertility naturally.",
+        "te": "గృహిణులు, ఉద్యోగినులు, వ్యవస్థాపకులు, యువతులు — సహజంగా తమ ఫెర్టిలిటీకి తోడ్పడాలనుకునే ప్రతి ఒక్కరూ."
+      },
+      "items": [
+        { "icon": "seed", "title": { "en": "Women Trying To Conceive", "te": "గర్భధారణ కోసం ప్రయత్నిస్తున్న మహిళలు" }, "desc": { "en": "Trying for months or years but still unsure about what’s really missing.", "te": "నెలలు/సంవత్సరాలుగా ప్రయత్నిస్తున్నా అసలు లోపం ఏమిటో తెలియనివారు." } },
+        { "icon": "balance", "title": { "en": "Women Facing Hormonal Issues", "te": "హార్మోన్ సమస్యలున్న మహిళలు" }, "desc": { "en": "Dealing with PCOS, thyroid or cycle issues who want to understand their body better.", "te": "PCOS, థైరాయిడ్, సైకిల్ సమస్యలతో తమ శరీరాన్ని మరింత అర్థం చేసుకోవాలనుకునేవారు." } },
+        { "icon": "heart", "title": { "en": "Emotionally Stressed Women", "te": "భావోద్వేగ ఒత్తిడిలో ఉన్న మహిళలు" }, "desc": { "en": "Feeling anxious, overwhelmed or drained during their fertility journey.", "te": "ఫెర్టిలిటీ ప్రయాణంలో ఆందోళన, ఒత్తిడి, అలసట అనుభవిస్తున్నవారు." } },
+        { "icon": "compass", "title": { "en": "Women Stuck in Treatments", "te": "చికిత్సలలో ఇరుక్కున్న మహిళలు" }, "desc": { "en": "Undergoing treatments but still lacking clarity or desired results.", "te": "చికిత్సలు తీసుకుంటున్నా స్పష్టత లేదా కావాల్సిన ఫలితాలు లేనివారు." } },
+        { "icon": "lotus", "title": { "en": "Holistic Approach Seekers", "te": "సమగ్ర విధానం కోరుకునేవారు" }, "desc": { "en": "Ready to support their fertility naturally through mind, body and lifestyle.", "te": "మనసు, శరీరం, జీవనశైలి ద్వారా సహజంగా ఫెర్టిలిటీకి తోడ్పడాలనుకునేవారు." } }
+      ]
+    },
+
+    {
+      "id": "learn",
+      "type": "curriculum",
+      "heading": { "en": "What You'll Learn", "te": "మీరు ఏమి నేర్చుకుంటారు" },
+      "subheading": {
+        "en": "Real transformation happens when we work with your body, not against it.",
+        "te": "మీ శరీరానికి వ్యతిరేకంగా కాకుండా దానితో కలిసి పనిచేసినప్పుడే నిజమైన మార్పు జరుగుతుంది."
+      },
+      "modules": [
+        {
+          "tag": { "en": "Secret 1", "te": "రహస్యం 1" },
+          "title": { "en": "Understand The Root Cause", "te": "మూల కారణాన్ని అర్థం చేసుకోండి" },
+          "image": "/images/learn-1.svg",
+          "points": [
+            { "en": "Why conception delays happen", "te": "గర్భధారణలో ఆలస్యం ఎందుకు జరుగుతుంది" },
+            { "en": "The stress & hormones connection", "te": "ఒత్తిడి & హార్మోన్ల మధ్య సంబంధం" },
+            { "en": "Mind–womb connection basics", "te": "మనసు–గర్భం అనుబంధం ప్రాథమికాలు" },
+            { "en": "Identify hidden emotional blocks", "te": "దాచిన భావోద్వేగ అడ్డంకులను గుర్తించడం" },
+            { "en": "A simple awareness exercise", "te": "ఒక సరళమైన అవగాహన అభ్యాసం" }
+          ]
+        },
+        {
+          "tag": { "en": "Secret 2", "te": "రహస్యం 2" },
+          "title": { "en": "Reset Your Body & Lifestyle", "te": "మీ శరీరం & జీవనశైలిని రీసెట్ చేయండి" },
+          "image": "/images/learn-2.svg",
+          "points": [
+            { "en": "Understand your fertility reports", "te": "మీ ఫెర్టిలిటీ రిపోర్టులను అర్థం చేసుకోండి" },
+            { "en": "Fertility-supporting diet basics", "te": "ఫెర్టిలిటీకి తోడ్పడే ఆహార ప్రాథమికాలు" },
+            { "en": "Key lifestyle habits affecting fertility", "te": "ఫెర్టిలిటీని ప్రభావితం చేసే ముఖ్య అలవాట్లు" },
+            { "en": "Calm your nervous system", "te": "మీ నాడీ వ్యవస్థను శాంతపరచండి" },
+            { "en": "A daily womb-support routine", "te": "రోజువారీ గర్భ-సహాయక దినచర్య" }
+          ]
+        },
+        {
+          "tag": { "en": "Secret 3", "te": "రహస్యం 3" },
+          "title": { "en": "Emotional & Womb Healing", "te": "భావోద్వేగ & గర్భ వైద్యం" },
+          "image": "/images/learn-3.svg",
+          "points": [
+            { "en": "Inner child healing for fertility", "te": "ఫెర్టిలిటీ కోసం ఇన్నర్ చైల్డ్ హీలింగ్" },
+            { "en": "Release fear, guilt & pressure", "te": "భయం, అపరాధభావం & ఒత్తిడిని విడుదల చేయడం" },
+            { "en": "A guided womb healing practice", "te": "మార్గనిర్దేశిత గర్భ వైద్య అభ్యాసం" },
+            { "en": "Create a calm emotional space", "te": "ప్రశాంత భావోద్వేగ స్థలాన్ని సృష్టించడం" },
+            { "en": "Clear next steps for your journey", "te": "మీ ప్రయాణానికి స్పష్టమైన తదుపరి అడుగులు" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "outcomes",
+      "type": "cardgrid",
+      "variant": "outcomes",
+      "heading": { "en": "Here's How Your Journey Can Start Changing", "te": "మీ ప్రయాణం ఇలా మారడం మొదలవుతుంది" },
+      "subheading": {
+        "en": "From confusion and stress… to clarity, balance and hope.",
+        "te": "గందరగోళం, ఒత్తిడి నుండి… స్పష్టత, సమతుల్యత, ఆశ వైపు."
+      },
+      "items": [
+        { "icon": "balance", "title": { "en": "Emotional Stability", "te": "భావోద్వేగ స్థిరత్వం" }, "desc": { "en": "Feel calmer, more balanced and in control of your emotions.", "te": "ప్రశాంతంగా, సమతుల్యంగా, మీ భావోద్వేగాలపై నియంత్రణతో ఉండండి." } },
+        { "icon": "heart", "title": { "en": "Reduced Stress & Anxiety", "te": "తగ్గిన ఒత్తిడి & ఆందోళన" }, "desc": { "en": "Release constant worry and feel more peaceful in your journey.", "te": "నిరంతర ఆందోళనను విడిచి, ప్రయాణంలో మరింత ప్రశాంతంగా అనుభూతి చెందండి." } },
+        { "icon": "lotus", "title": { "en": "Lifestyle Awareness", "te": "జీవనశైలి అవగాహన" }, "desc": { "en": "Understand which habits truly support your fertility.", "te": "ఏ అలవాట్లు నిజంగా మీ ఫెర్టిలిటీకి తోడ్పడతాయో అర్థం చేసుకోండి." } },
+        { "icon": "report", "title": { "en": "Body Understanding", "te": "శరీర అవగాహన" }, "desc": { "en": "Know what your body is trying to tell you.", "te": "మీ శరీరం మీకు ఏం చెప్పాలనుకుంటోందో తెలుసుకోండి." } },
+        { "icon": "spark", "title": { "en": "Renewed Confidence", "te": "నవీకరించబడిన ఆత్మవిశ్వాసం" }, "desc": { "en": "Feel more confident and positive about your fertility journey.", "te": "మీ ఫెర్టిలిటీ ప్రయాణంపై మరింత ఆత్మవిశ్వాసం, సానుకూలత పొందండి." } },
+        { "icon": "link", "title": { "en": "Mind–Body Connection", "te": "మనసు–శరీర అనుబంధం" }, "desc": { "en": "Build a deeper connection between your emotions and body.", "te": "మీ భావోద్వేగాలకు, శరీరానికి మధ్య లోతైన అనుబంధాన్ని ఏర్పరచుకోండి." } },
+        { "icon": "compass", "title": { "en": "Clarity On Diet & Health", "te": "ఆహారం & ఆరోగ్యంపై స్పష్టత" }, "desc": { "en": "Know what to follow without confusion or overwhelm.", "te": "గందరగోళం లేకుండా ఏం పాటించాలో తెలుసుకోండి." } },
+        { "icon": "couple", "title": { "en": "Improved Relationships", "te": "మెరుగైన సంబంధాలు" }, "desc": { "en": "Feel more emotionally supported and connected in your relationship.", "te": "మీ సంబంధంలో మరింత భావోద్వేగ మద్దతు, అనుబంధాన్ని అనుభవించండి." } },
+        { "icon": "spark", "title": { "en": "Hope & Positivity", "te": "ఆశ & సానుకూలత" }, "desc": { "en": "Move forward with a more hopeful and positive mindset.", "te": "మరింత ఆశావహ, సానుకూల దృక్పథంతో ముందుకు సాగండి." } }
+      ]
+    },
+
+    {
+      "id": "about",
+      "type": "about",
+      "greeting": { "en": "Namaste 🙏", "te": "నమస్తే 🙏" },
+      "heading": { "en": "I am RV Vedika Raksha", "te": "నేను ఆర్‌వి వేదిక రక్ష" },
+      "paragraphs": [
+        {
+          "en": "Vedika Raksha is a womb healing coach who supports women in overcoming the emotional and lifestyle blocks that may be affecting their fertility. Her approach goes beyond just symptoms — focusing on healing the root cause through emotional work, lifestyle awareness, and the mind–body connection.",
+          "te": "వేదిక రక్ష ఒక గర్భ వైద్య కోచ్. ఫెర్టిలిటీని ప్రభావితం చేసే భావోద్వేగ & జీవనశైలి అడ్డంకులను అధిగమించడంలో మహిళలకు ఆమె తోడ్పడతారు. ఆమె విధానం కేవలం లక్షణాలకే పరిమితం కాదు — భావోద్వేగ పని, జీవనశైలి అవగాహన, మనసు–శరీర అనుబంధం ద్వారా మూల కారణాన్ని నయం చేయడంపై దృష్టి పెడుతుంది."
+        },
+        {
+          "en": "She integrates inner-child healing, personalised diet guidance based on health reports, and simple womb healing practices to help women understand their body and support their fertility journey naturally.",
+          "te": "ఇన్నర్ చైల్డ్ హీలింగ్, ఆరోగ్య రిపోర్టుల ఆధారంగా వ్యక్తిగత ఆహార మార్గదర్శనం, సరళమైన గర్భ వైద్య అభ్యాసాలను కలిపి — మహిళలు తమ శరీరాన్ని అర్థం చేసుకుని సహజంగా తమ ఫెర్టిలిటీ ప్రయాణానికి తోడ్పడేలా చేస్తారు."
+        }
+      ],
+      "credentials": [
+        { "en": "Experienced in emotional healing and counselling", "te": "భావోద్వేగ వైద్యం & కౌన్సెలింగ్‌లో అనుభవం" },
+        { "en": "Guided women through mindset, healing and fertility awareness", "te": "మైండ్‌సెట్, వైద్యం, ఫెర్టిలిటీ అవగాహన ద్వారా మహిళలకు మార్గనిర్దేశం" },
+        { "en": "Creator of a structured womb healing approach", "te": "ఒక నిర్మాణాత్మక గర్భ వైద్య విధానం రూపకర్త" },
+        { "en": "Supported women with PCOS, hormonal imbalance and fertility challenges", "te": "PCOS, హార్మోన్ అసమతుల్యత, ఫెర్టిలిటీ సవాళ్లున్న మహిళలకు మద్దతు" }
+      ],
+      "mission": {
+        "title": { "en": "My Mission", "te": "నా లక్ష్యం" },
+        "text": {
+          "en": "To help 1,00,000 women heal emotionally, understand their body deeply, and move towards motherhood with clarity, confidence and inner balance.",
+          "te": "1,00,000 మంది మహిళలు భావోద్వేగంగా స్వస్థత పొంది, తమ శరీరాన్ని లోతుగా అర్థం చేసుకుని, స్పష్టత, ఆత్మవిశ్వాసం, అంతర్గత సమతుల్యతతో మాతృత్వం వైపు సాగేలా సహాయం చేయడం."
+        }
+      }
+    },
+
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "heading": { "en": "Real Women. Real Struggles. Real Transformations.", "te": "నిజమైన మహిళలు. నిజమైన పోరాటాలు. నిజమైన మార్పులు." },
+      "subheading": {
+        "en": "Stories from women who found clarity, calm and hope on their journey.",
+        "te": "తమ ప్రయాణంలో స్పష్టత, ప్రశాంతత, ఆశను పొందిన మహిళల కథలు."
+      },
+      "items": [
+        {
+          "quote": { "en": "I had normal reports for years but no results. Working on my emotional blocks changed how I felt about my whole journey — calmer, hopeful, and finally understood.", "te": "సంవత్సరాలుగా నా రిపోర్టులు నార్మల్‌గా ఉన్నా ఫలితం లేదు. నా భావోద్వేగ అడ్డంకులపై పనిచేయడం నా మొత్తం ప్రయాణాన్ని మార్చింది — ప్రశాంతంగా, ఆశతో, చివరికి అర్థమైనట్లు." },
+          "author": { "en": "Working professional, Hyderabad", "te": "ఉద్యోగిని, హైదరాబాద్" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "The diet and lifestyle clarity alone was worth it. For the first time I understood what my body was telling me instead of just following random advice.", "te": "ఆహారం & జీవనశైలిపై వచ్చిన స్పష్టత ఒక్కటే విలువైనది. మొదటిసారి నా శరీరం నాకు ఏం చెబుతోందో అర్థమైంది, యాదృచ్ఛిక సలహాలు పాటించడం కాదు." },
+          "author": { "en": "Homemaker, Vijayawada", "te": "గృహిణి, విజయవాడ" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "The womb healing practice helped me release so much fear and pressure. My relationship with my partner became lighter and more connected too.", "te": "గర్భ వైద్య అభ్యాసం నాలోని ఎంతో భయం, ఒత్తిడిని విడుదల చేయడంలో సహాయపడింది. నా భాగస్వామితో నా అనుబంధం కూడా తేలికగా, మరింత దగ్గరగా మారింది." },
+          "author": { "en": "Entrepreneur, NRI client", "te": "వ్యవస్థాపకురాలు, ఎన్‌ఆర్‌ఐ క్లయింట్" },
+          "rating": 5
+        }
+      ],
+      "note": {
+        "en": "Experiences vary from person to person. These reflect personal journeys, not guaranteed outcomes.",
+        "te": "అనుభవాలు వ్యక్తికి వ్యక్తికి మారతాయి. ఇవి వ్యక్తిగత ప్రయాణాలను సూచిస్తాయి, హామీ ఇచ్చిన ఫలితాలు కాదు."
+      }
+    },
+
+    {
+      "id": "faq",
+      "type": "faq",
+      "heading": { "en": "Frequently Asked Questions", "te": "తరచుగా అడిగే ప్రశ్నలు" },
+      "items": [
+        { "q": { "en": "Is this a medical treatment?", "te": "ఇది వైద్య చికిత్సనా?" }, "a": { "en": "No. This is a supportive workshop focused on the emotional, lifestyle and mind–body aspects of fertility.", "te": "కాదు. ఇది ఫెర్టిలిటీకి సంబంధించిన భావోద్వేగ, జీవనశైలి, మనసు–శరీర అంశాలపై దృష్టి పెట్టే సహాయక వర్క్‌షాప్." } },
+        { "q": { "en": "Will this guarantee pregnancy?", "te": "ఇది గర్భధారణకు హామీ ఇస్తుందా?" }, "a": { "en": "No, but it helps you improve key emotional and lifestyle factors that support your fertility journey.", "te": "లేదు, కానీ మీ ఫెర్టిలిటీ ప్రయాణానికి తోడ్పడే ముఖ్య భావోద్వేగ & జీవనశైలి అంశాలను మెరుగుపరచడంలో సహాయపడుతుంది." } },
+        { "q": { "en": "Can I join if I am undergoing treatment?", "te": "నేను చికిత్స తీసుకుంటుంటే చేరవచ్చా?" }, "a": { "en": "Yes. This workshop is designed to complement medical treatments, not replace them.", "te": "అవును. ఈ వర్క్‌షాప్ వైద్య చికిత్సలకు పూరకంగా రూపొందించబడింది, వాటిని భర్తీ చేయడానికి కాదు." } },
+        { "q": { "en": "Do I need medical reports to attend?", "te": "హాజరు కావడానికి వైద్య రిపోర్టులు అవసరమా?" }, "a": { "en": "No, but having your reports can help you better understand your body during the workshop.", "te": "అవసరం లేదు, కానీ రిపోర్టులు ఉంటే వర్క్‌షాప్‌లో మీ శరీరాన్ని బాగా అర్థం చేసుకోవడంలో సహాయపడతాయి." } },
+        { "q": { "en": "Is this suitable for PCOS, thyroid or hormonal issues?", "te": "PCOS, థైరాయిడ్, హార్మోన్ సమస్యలకు ఇది సరిపోతుందా?" }, "a": { "en": "Yes. It supports overall wellbeing and helps you understand the factors affecting hormonal balance.", "te": "అవును. ఇది మొత్తం శ్రేయస్సుకు తోడ్పడుతుంది, హార్మోన్ సమతుల్యతను ప్రభావితం చేసే అంశాలను అర్థం చేసుకోవడంలో సహాయపడుతుంది." } },
+        { "q": { "en": "How long does it take to see results?", "te": "ఫలితాలు కనిపించడానికి ఎంత సమయం పడుతుంది?" }, "a": { "en": "It varies for each individual, but many women experience clarity and emotional relief early on.", "te": "ఇది ప్రతి వ్యక్తికి మారుతుంది, కానీ చాలామంది మహిళలు ప్రారంభంలోనే స్పష్టత, భావోద్వేగ ఉపశమనాన్ని అనుభవిస్తారు." } }
+      ]
+    },
+
+    {
+      "id": "cta",
+      "type": "cta",
+      "heading": { "en": "Ready to begin your healing journey?", "te": "మీ స్వస్థత ప్రయాణాన్ని ప్రారంభించడానికి సిద్ధంగా ఉన్నారా?" },
+      "subheading": {
+        "en": "Join the next free live workshop and take the first gentle step.",
+        "te": "తదుపరి ఉచిత లైవ్ వర్క్‌షాప్‌లో చేరి, మొదటి సున్నితమైన అడుగు వేయండి."
+      },
+      "workshop": {
+        "label": { "en": "Next Workshop", "te": "తదుపరి వర్క్‌షాప్" },
+        "date": { "en": "30th May 2026 · 2:00 PM IST", "te": "30 మే 2026 · మధ్యాహ్నం 2:00 IST" },
+        "targetIso": "2026-05-30T14:00:00+05:30"
+      }
+    }
+  ],
+
+  "footer": {
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}

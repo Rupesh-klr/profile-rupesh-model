@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "client": "Vedika Raksha",
+    "page": "refund-cancellation",
+    "note": "Template legal text — please review with a professional before publishing. Bilingual { en, te }."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "title": { "en": "Refund & Cancellation Policy", "te": "రీఫండ్ & రద్దు విధానం" },
+    "social": [
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/918074540299", "handle": "WhatsApp" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "home", "label": { "en": "← Home", "te": "← హోమ్" }, "route": "/" },
+      { "id": "terms", "label": { "en": "Terms", "te": "నిబంధనలు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "id": "privacy", "label": { "en": "Privacy", "te": "గోప్యత" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "id": "refund", "label": { "en": "Refund", "te": "రీఫండ్" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ]
+  },
+
+  "ui": {
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "legal",
+      "type": "legal",
+      "title": { "en": "Refund & Cancellation Policy", "te": "రీఫండ్ & రద్దు విధానం" },
+      "updated": { "en": "Last updated: June 2026", "te": "చివరిగా నవీకరించబడింది: జూన్ 2026" },
+      "intro": {
+        "en": "We want you to feel confident joining our programs. This policy explains how cancellations and refunds work for our paid services.",
+        "te": "మా ప్రోగ్రామ్‌లలో చేరడంలో మీరు నమ్మకంగా ఉండాలని కోరుకుంటున్నాము. మా చెల్లింపు సేవలకు రద్దులు, రీఫండ్‌లు ఎలా పని చేస్తాయో ఈ విధానం వివరిస్తుంది."
+      },
+      "clauses": [
+        {
+          "heading": { "en": "Free Workshops & Sessions", "te": "ఉచిత వర్క్‌షాప్‌లు & సెషన్లు" },
+          "body": [
+            { "en": "Free workshops and sessions involve no payment, so no refund applies. You may stop attending at any time.", "te": "ఉచిత వర్క్‌షాప్‌లు, సెషన్లకు ఎలాంటి చెల్లింపు ఉండదు, కాబట్టి రీఫండ్ వర్తించదు. మీరు ఎప్పుడైనా హాజరు ఆపవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Paid Programs & 1:1 Sessions", "te": "చెల్లింపు ప్రోగ్రామ్‌లు & 1:1 సెషన్లు" },
+          "body": [
+            { "en": "Fees for paid programs, challenges and one-to-one sessions are described at the time of booking. Please read the inclusions before you pay.", "te": "చెల్లింపు ప్రోగ్రామ్‌లు, ఛాలెంజ్‌లు, వన్-టు-వన్ సెషన్ల ఫీజు బుకింగ్ సమయంలో తెలియజేయబడుతుంది. చెల్లించే ముందు దయచేసి వివరాలను చదవండి." }
+          ]
+        },
+        {
+          "heading": { "en": "Cancellation by You", "te": "మీచే రద్దు" },
+          "body": [
+            { "en": "To cancel, contact us at least 48 hours before your scheduled session or program start. Cancellations within 48 hours may not be eligible for a refund.", "te": "రద్దు చేయడానికి, మీ సెషన్/ప్రోగ్రామ్ ప్రారంభానికి కనీసం 48 గంటల ముందు మమ్మల్ని సంప్రదించండి. 48 గంటలలోపు రద్దులకు రీఫండ్ వర్తించకపోవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Rescheduling", "te": "రీషెడ్యూలింగ్" },
+          "body": [
+            { "en": "Where possible, we are happy to reschedule a 1:1 session once if you give at least 48 hours' notice.", "te": "సాధ్యమైన చోట, మీరు కనీసం 48 గంటల ముందు తెలియజేస్తే, ఒక 1:1 సెషన్‌ను ఒకసారి రీషెడ్యూల్ చేయడానికి సంతోషంగా అంగీకరిస్తాము." }
+          ]
+        },
+        {
+          "heading": { "en": "Refund Eligibility", "te": "రీఫండ్ అర్హత" },
+          "body": [
+            { "en": "Refund requests made before the program begins (and within any stated window) may be eligible for a full or partial refund, minus any payment-gateway charges.", "te": "ప్రోగ్రామ్ ప్రారంభం కావడానికి ముందు (పేర్కొన్న వ్యవధిలో) చేసిన రీఫండ్ అభ్యర్థనలకు చెల్లింపు గేట్‌వే ఛార్జీలు మినహాయించి పూర్తి లేదా పాక్షిక రీఫండ్ వర్తించవచ్చు." }
+          ]
+        },
+        {
+          "heading": { "en": "Non-Refundable Items", "te": "రీఫండ్ చేయని అంశాలు" },
+          "body": [
+            { "en": "Digital products, recordings and downloadable materials are non-refundable once access has been provided. Sessions already attended are non-refundable.", "te": "డిజిటల్ ఉత్పత్తులు, రికార్డింగ్‌లు, డౌన్‌లోడ్ చేయదగిన మెటీరియల్స్ యాక్సెస్ ఇచ్చిన తర్వాత రీఫండ్ చేయబడవు. ఇప్పటికే హాజరైన సెషన్లకు రీఫండ్ ఉండదు." }
+          ]
+        },
+        {
+          "heading": { "en": "How to Request a Refund", "te": "రీఫండ్ ఎలా అభ్యర్థించాలి" },
+          "body": [
+            { "en": "Email rvvedikaraksha@gmail.com or message +91 80745 40299 with your name, the program/session and your payment details. We will confirm eligibility.", "te": "మీ పేరు, ప్రోగ్రామ్/సెషన్, చెల్లింపు వివరాలతో rvvedikaraksha@gmail.com కు ఇమెయిల్ చేయండి లేదా +91 80745 40299 కు సందేశం పంపండి. మేము అర్హతను ధృవీకరిస్తాము." }
+          ]
+        },
+        {
+          "heading": { "en": "Processing Time", "te": "ప్రాసెసింగ్ సమయం" },
+          "body": [
+            { "en": "Approved refunds are processed to your original payment method, usually within 7–10 business days.", "te": "ఆమోదించబడిన రీఫండ్‌లు మీ అసలు చెల్లింపు పద్ధతికి, సాధారణంగా 7–10 పని దినాలలో ప్రాసెస్ చేయబడతాయి." }
+          ]
+        }
+      ],
+      "note": {
+        "en": "This document is a general template provided for convenience and is not legal advice. Please have it reviewed by a qualified professional and align the timelines with your payment provider before relying on it.",
+        "te": "ఈ పత్రం సౌలభ్యం కోసం అందించిన సాధారణ టెంప్లేట్, చట్టపరమైన సలహా కాదు. దీనిపై ఆధారపడే ముందు అర్హత కలిగిన నిపుణుడిచే సమీక్షించి, గడువులను మీ చెల్లింపు ప్రదాతతో సరిచూసుకోండి."
+      }
+    }
+  ],
+
+  "footer": {
+    "legalLinks": [
+      { "label": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "label": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "label": { "en": "Refund & Cancellation", "te": "రీఫండ్ & రద్దు" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ],
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}

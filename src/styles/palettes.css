@@ -1,0 +1,106 @@
+/* ============================================================
+   Profilo Designer — 8 colour palettes
+   Selected by the secret URL number  ?p=1 … ?p=8
+   (see src/utils/applyPalette.js). Palette 1 is the default
+   defined in index.css, so only 2–8 are overridden here.
+   Each palette overrides only the BRAND colours + glows; the
+   neutral backgrounds/text stay per-theme for consistency.
+   ============================================================ */
+
+/* ---- 2 · Green / Pink ---- */
+[data-palette='2'] {
+  --primary: #2f7d54; --primary-700: #246343;
+  --accent: #e98bb0; --accent-2: #f3b6cd; --gold: #cda14a;
+  --ring: rgba(47,125,84,0.35);
+  --hero-glow-1: rgba(233,139,176,0.5); --hero-glow-2: rgba(120,200,150,0.45); --hero-glow-3: rgba(205,161,74,0.25);
+}
+[data-theme='dark'][data-palette='2'] {
+  --primary: #6fc79a; --primary-700: #4fae7e;
+  --accent: #f0a8c4; --accent-2: #f3b6cd; --gold: #e0bd72;
+  --ring: rgba(111,199,154,0.4);
+  --hero-glow-1: rgba(180,90,130,0.5); --hero-glow-2: rgba(90,160,120,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 3 · Royal Blue ---- */
+[data-palette='3'] {
+  --primary: #1f5fb0; --primary-700: #184c8f;
+  --accent: #6aa6e6; --accent-2: #a9cdf2; --gold: #c9a24b;
+  --ring: rgba(31,95,176,0.35);
+  --hero-glow-1: rgba(106,166,230,0.5); --hero-glow-2: rgba(150,180,240,0.4); --hero-glow-3: rgba(201,162,75,0.25);
+}
+[data-theme='dark'][data-palette='3'] {
+  --primary: #82b4ec; --primary-700: #5f93d8;
+  --accent: #a9cdf2; --accent-2: #c7defa; --gold: #e0bd72;
+  --ring: rgba(130,180,236,0.4);
+  --hero-glow-1: rgba(70,110,200,0.5); --hero-glow-2: rgba(90,120,180,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 4 · Red / Crimson ---- */
+[data-palette='4'] {
+  --primary: #b5294a; --primary-700: #95203c;
+  --accent: #e8869a; --accent-2: #f3b3c0; --gold: #cf9a4a;
+  --ring: rgba(181,41,74,0.35);
+  --hero-glow-1: rgba(232,134,154,0.5); --hero-glow-2: rgba(240,170,150,0.45); --hero-glow-3: rgba(207,154,74,0.25);
+}
+[data-theme='dark'][data-palette='4'] {
+  --primary: #ef94a6; --primary-700: #e2768c;
+  --accent: #f3b3c0; --accent-2: #f7cdd6; --gold: #e0bd72;
+  --ring: rgba(239,148,166,0.4);
+  --hero-glow-1: rgba(190,60,90,0.5); --hero-glow-2: rgba(160,80,80,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 5 · Emerald ---- */
+[data-palette='5'] {
+  --primary: #1f8a5b; --primary-700: #176e49;
+  --accent: #6fcf9a; --accent-2: #a9e6c4; --gold: #c9a24b;
+  --ring: rgba(31,138,91,0.35);
+  --hero-glow-1: rgba(111,207,154,0.5); --hero-glow-2: rgba(150,220,180,0.4); --hero-glow-3: rgba(201,162,75,0.25);
+}
+[data-theme='dark'][data-palette='5'] {
+  --primary: #74d8a4; --primary-700: #54bd86;
+  --accent: #a9e6c4; --accent-2: #c7f0db; --gold: #e0bd72;
+  --ring: rgba(116,216,164,0.4);
+  --hero-glow-1: rgba(40,150,100,0.5); --hero-glow-2: rgba(70,160,120,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 6 · Teal / Cyan ---- */
+[data-palette='6'] {
+  --primary: #0f7d86; --primary-700: #0b636b;
+  --accent: #5fc6c9; --accent-2: #a9e6e6; --gold: #c9a24b;
+  --ring: rgba(15,125,134,0.35);
+  --hero-glow-1: rgba(95,198,201,0.5); --hero-glow-2: rgba(150,220,220,0.4); --hero-glow-3: rgba(201,162,75,0.25);
+}
+[data-theme='dark'][data-palette='6'] {
+  --primary: #6fd0d3; --primary-700: #4fb8bb;
+  --accent: #a9e6e6; --accent-2: #c7f0f0; --gold: #e0bd72;
+  --ring: rgba(111,208,211,0.4);
+  --hero-glow-1: rgba(20,130,140,0.5); --hero-glow-2: rgba(60,150,150,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 7 · Violet / Purple ---- */
+[data-palette='7'] {
+  --primary: #6b3fb0; --primary-700: #56328f;
+  --accent: #b08ae0; --accent-2: #d2bdf0; --gold: #c9a24b;
+  --ring: rgba(107,63,176,0.35);
+  --hero-glow-1: rgba(176,138,224,0.5); --hero-glow-2: rgba(190,160,240,0.4); --hero-glow-3: rgba(201,162,75,0.25);
+}
+[data-theme='dark'][data-palette='7'] {
+  --primary: #c0a4ec; --primary-700: #a684e0;
+  --accent: #d2bdf0; --accent-2: #e3d6fa; --gold: #e0bd72;
+  --ring: rgba(192,164,236,0.4);
+  --hero-glow-1: rgba(110,70,180,0.5); --hero-glow-2: rgba(120,90,180,0.4); --hero-glow-3: rgba(224,189,114,0.22);
+}
+
+/* ---- 8 · Amber / Sunset ---- */
+[data-palette='8'] {
+  --primary: #c4642a; --primary-700: #a25022;
+  --accent: #f0a96f; --accent-2: #f7c9a9; --gold: #d8a23c;
+  --ring: rgba(196,100,42,0.35);
+  --hero-glow-1: rgba(240,169,111,0.5); --hero-glow-2: rgba(245,200,150,0.45); --hero-glow-3: rgba(216,162,60,0.28);
+}
+[data-theme='dark'][data-palette='8'] {
+  --primary: #f0b98f; --primary-700: #e6a06f;
+  --accent: #f7c9a9; --accent-2: #fadfc7; --gold: #e6c27a;
+  --ring: rgba(240,185,143,0.4);
+  --hero-glow-1: rgba(190,100,50,0.5); --hero-glow-2: rgba(170,110,70,0.4); --hero-glow-3: rgba(230,194,122,0.22);
+}

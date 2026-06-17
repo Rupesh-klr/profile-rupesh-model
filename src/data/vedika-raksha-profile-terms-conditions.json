@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "client": "Vedika Raksha",
+    "page": "terms-conditions",
+    "note": "Template legal text — please review with a professional before publishing. Bilingual { en, te }."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "title": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" },
+    "social": [
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/918074540299", "handle": "WhatsApp" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "home", "label": { "en": "← Home", "te": "← హోమ్" }, "route": "/" },
+      { "id": "terms", "label": { "en": "Terms", "te": "నిబంధనలు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "id": "privacy", "label": { "en": "Privacy", "te": "గోప్యత" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "id": "refund", "label": { "en": "Refund", "te": "రీఫండ్" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ]
+  },
+
+  "ui": {
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "legal",
+      "type": "legal",
+      "title": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" },
+      "updated": { "en": "Last updated: June 2026", "te": "చివరిగా నవీకరించబడింది: జూన్ 2026" },
+      "intro": {
+        "en": "Welcome to Vedika Raksha (\"we\", \"us\"). By accessing this website or joining any of our workshops, programs or sessions, you agree to these Terms & Conditions. Please read them carefully.",
+        "te": "వేదిక రక్షకు స్వాగతం (\"మేము\"). ఈ వెబ్‌సైట్‌ను ఉపయోగించడం ద్వారా లేదా మా వర్క్‌షాప్‌లు, ప్రోగ్రామ్‌లు, సెషన్లలో చేరడం ద్వారా మీరు ఈ నిబంధనలు & షరతులను అంగీకరిస్తారు. దయచేసి జాగ్రత్తగా చదవండి."
+      },
+      "clauses": [
+        {
+          "heading": { "en": "Acceptance of Terms", "te": "నిబంధనల అంగీకారం" },
+          "body": [
+            { "en": "By using this website or any of our services, you confirm that you accept these terms and agree to comply with them. If you do not agree, please do not use our services.", "te": "ఈ వెబ్‌సైట్ లేదా మా సేవలను ఉపయోగించడం ద్వారా, మీరు ఈ నిబంధనలను అంగీకరించి, వాటిని పాటించడానికి సమ్మతిస్తున్నారని ధృవీకరిస్తారు. మీరు అంగీకరించకపోతే, దయచేసి మా సేవలను ఉపయోగించవద్దు." }
+          ]
+        },
+        {
+          "heading": { "en": "Our Services", "te": "మా సేవలు" },
+          "body": [
+            { "en": "We offer women's empowerment coaching, mentoring, emotional wellbeing support and educational workshops focused on confidence, mindset and personal growth. Our services are supportive and educational in nature.", "te": "మేము ఆత్మవిశ్వాసం, మనోభావం, వ్యక్తిగత ఎదుగుదలపై దృష్టి సారించిన మహిళా సాధికారత కోచింగ్, మెంటరింగ్, భావోద్వేగ శ్రేయస్సు మద్దతు, విద్యా వర్క్‌షాప్‌లను అందిస్తాము. మా సేవలు సహాయక, విద్యాపరమైన స్వభావం కలిగినవి." }
+          ]
+        },
+        {
+          "heading": { "en": "No Medical or Professional Advice", "te": "వైద్య లేదా వృత్తిపరమైన సలహా కాదు" },
+          "body": [
+            { "en": "Our content and sessions are not a substitute for medical, psychological or other professional advice, diagnosis or treatment. Always consult a qualified professional for medical concerns. Results vary from person to person and are not guaranteed.", "te": "మా కంటెంట్, సెషన్లు వైద్య, మానసిక లేదా ఇతర వృత్తిపరమైన సలహా, నిర్ధారణ లేదా చికిత్సకు ప్రత్యామ్నాయం కాదు. వైద్య సమస్యలకు ఎల్లప్పుడూ అర్హత కలిగిన నిపుణుడిని సంప్రదించండి. ఫలితాలు వ్యక్తికి వ్యక్తికి మారతాయి, హామీ ఇవ్వబడవు." }
+          ]
+        },
+        {
+          "heading": { "en": "Bookings & Payments", "te": "బుకింగ్‌లు & చెల్లింపులు" },
+          "body": [
+            { "en": "Paid programs and sessions must be booked and paid through the methods we provide. Prices and inclusions are described at the time of booking. Refunds are handled per our Refund & Cancellation Policy.", "te": "చెల్లింపు ప్రోగ్రామ్‌లు, సెషన్లను మేము అందించే పద్ధతుల ద్వారా బుక్ చేసి చెల్లించాలి. ధరలు, వివరాలు బుకింగ్ సమయంలో తెలియజేయబడతాయి. రీఫండ్‌లు మా రీఫండ్ & రద్దు విధానం ప్రకారం నిర్వహించబడతాయి." }
+          ]
+        },
+        {
+          "heading": { "en": "Your Responsibilities", "te": "మీ బాధ్యతలు" },
+          "body": [
+            { "en": "You agree to provide accurate information, behave respectfully during sessions, and not record, copy or redistribute our content without written permission.", "te": "మీరు ఖచ్చితమైన సమాచారం అందించడానికి, సెషన్లలో గౌరవంగా ప్రవర్తించడానికి, మా కంటెంట్‌ను లిఖితపూర్వక అనుమతి లేకుండా రికార్డ్, కాపీ లేదా పునఃపంపిణీ చేయకుండా ఉండటానికి అంగీకరిస్తారు." }
+          ]
+        },
+        {
+          "heading": { "en": "Intellectual Property", "te": "మేధో సంపత్తి" },
+          "body": [
+            { "en": "All content on this site and in our programs — text, images, videos, methods and materials — belongs to Vedika Raksha and may not be used without permission.", "te": "ఈ సైట్‌లో, మా ప్రోగ్రామ్‌లలో ఉన్న అన్ని కంటెంట్ — టెక్స్ట్, చిత్రాలు, వీడియోలు, పద్ధతులు, మెటీరియల్స్ — వేదిక రక్షకు చెందినవి, అనుమతి లేకుండా ఉపయోగించకూడదు." }
+          ]
+        },
+        {
+          "heading": { "en": "Third-Party Links & Platforms", "te": "థర్డ్-పార్టీ లింక్‌లు & ప్లాట్‌ఫారమ్‌లు" },
+          "body": [
+            { "en": "We use third-party platforms (e.g. Zoom, social media, payment gateways). We are not responsible for their content, availability or privacy practices.", "te": "మేము థర్డ్-పార్టీ ప్లాట్‌ఫారమ్‌లను (ఉదా. జూమ్, సోషల్ మీడియా, చెల్లింపు గేట్‌వేలు) ఉపయోగిస్తాము. వాటి కంటెంట్, లభ్యత లేదా గోప్యతా పద్ధతులకు మేము బాధ్యత వహించము." }
+          ]
+        },
+        {
+          "heading": { "en": "Limitation of Liability", "te": "బాధ్యత పరిమితి" },
+          "body": [
+            { "en": "To the maximum extent permitted by law, we are not liable for any indirect or consequential loss arising from the use of our website or services. You participate at your own discretion.", "te": "చట్టం అనుమతించిన గరిష్ఠ మేరకు, మా వెబ్‌సైట్ లేదా సేవల వినియోగం వల్ల కలిగే ఏ పరోక్ష లేదా పర్యవసాన నష్టానికి మేము బాధ్యత వహించము. మీరు మీ స్వంత నిర్ణయంతో పాల్గొంటారు." }
+          ]
+        },
+        {
+          "heading": { "en": "Changes & Governing Law", "te": "మార్పులు & వర్తించే చట్టం" },
+          "body": [
+            { "en": "We may update these terms at any time; the latest version applies. These terms are governed by the laws of India, with jurisdiction in Hyderabad, Telangana.", "te": "మేము ఈ నిబంధనలను ఎప్పుడైనా నవీకరించవచ్చు; తాజా వెర్షన్ వర్తిస్తుంది. ఈ నిబంధనలు భారత చట్టాల ప్రకారం నిర్వహించబడతాయి, పరిధి హైదరాబాద్, తెలంగాణ." }
+          ]
+        },
+        {
+          "heading": { "en": "Contact Us", "te": "మమ్మల్ని సంప్రదించండి" },
+          "body": [
+            { "en": "For any questions about these terms, email rvvedikaraksha@gmail.com or call/WhatsApp +91 80745 40299 (Bachupally, Hyderabad).", "te": "ఈ నిబంధనల గురించి ఏవైనా ప్రశ్నలకు, rvvedikaraksha@gmail.com కు ఇమెయిల్ చేయండి లేదా +91 80745 40299 కు కాల్/వాట్సాప్ చేయండి (బాచుపల్లి, హైదరాబాద్)." }
+          ]
+        }
+      ],
+      "note": {
+        "en": "This document is a general template provided for convenience and is not legal advice. Please have it reviewed by a qualified professional before relying on it.",
+        "te": "ఈ పత్రం సౌలభ్యం కోసం అందించిన సాధారణ టెంప్లేట్, చట్టపరమైన సలహా కాదు. దీనిపై ఆధారపడే ముందు అర్హత కలిగిన నిపుణుడిచే సమీక్షించబడాలి."
+      }
+    }
+  ],
+
+  "footer": {
+    "legalLinks": [
+      { "label": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "label": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "label": { "en": "Refund & Cancellation", "te": "రీఫండ్ & రద్దు" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ],
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}

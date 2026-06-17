@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe1ea"/>
+      <stop offset="0.5" stop-color="#caa0c0"/>
+      <stop offset="1" stop-color="#8a2d52"/>
+    </linearGradient>
+    <radialGradient id="halo3" cx="50%" cy="38%" r="42%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg3)"/>
+  <circle cx="400" cy="380" r="320" fill="url(#halo3)"/>
+  <g fill="#fff7fa" opacity="0.92">
+    <circle cx="400" cy="360" r="120"/>
+    <path d="M210 760c0-120 85-210 190-210s190 90 190 210v40H210z"/>
+  </g>
+  <g fill="none" stroke="#8a2d52" stroke-width="4" opacity="0.4">
+    <path d="M400 880c-70 0-110-42-110-82 30-15 58-15 76 0 0-40 14-82 34-110 20 28 34 70 34 110 18-15 46-15 76 0 0 40-40 82-110 82z"/>
+  </g>
+  <text x="400" y="940" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#fff7fa" opacity="0.95">Speaking at a workshop</text>
+  <text x="400" y="975" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#fff7fa" opacity="0.7">Replace with photo → vedika-3</text>
+</svg>

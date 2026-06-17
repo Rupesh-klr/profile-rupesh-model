@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "templateName": "Profilo Designer",
+    "templateVersion": "1.0.0",
+    "client": "Vedika Raksha",
+    "page": "empowerment-workshop",
+    "note": "Second workshop page (route /vedika-raksha-new-page) — a free live Women's Empowerment workshop. Bilingual { en, te }. Empowerment + emotional support focus; no fertility content."
+  },
+
+  "person": {
+    "name": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "honorific": { "en": "RV Vedika Raksha", "te": "ఆర్‌వి వేదిక రక్ష" },
+    "title": {
+      "en": "Women's Empowerment Coach & Wellness Mentor",
+      "te": "మహిళా సాధికారత కోచ్ & వెల్‌నెస్ మెంటర్"
+    },
+    "subtitle": {
+      "en": "Mindset, Confidence & Emotional Wellbeing Mentor",
+      "te": "మనోభావం, ఆత్మవిశ్వాసం & భావోద్వేగ శ్రేయస్సు మెంటర్"
+    },
+    "tagline": {
+      "en": "A free live workshop to rebuild confidence, find clarity, and rise as an independent, empowered woman.",
+      "te": "ఆత్మవిశ్వాసాన్ని పునర్నిర్మించి, స్పష్టత పొంది, స్వతంత్ర, సాధికారత గల మహిళగా ఎదగడానికి ఉచిత లైవ్ వర్క్‌షాప్."
+    },
+    "location": { "en": "Online · Worldwide", "te": "ఆన్‌లైన్ · ప్రపంచవ్యాప్తం" },
+    "primaryLanguage": { "en": "Speaks Telugu", "te": "తెలుగులో మాట్లాడుతారు" },
+    "images": [
+      { "src": "/images/vedika-1.svg", "alt": { "en": "Vedika Raksha — portrait", "te": "వేదిక రక్ష — చిత్రం" } },
+      { "src": "/images/vedika-2.svg", "alt": { "en": "Vedika Raksha — leading a workshop", "te": "వేదిక రక్ష — వర్క్‌షాప్ నడుపుతున్నారు" } },
+      { "src": "/images/vedika-3.svg", "alt": { "en": "Vedika Raksha — speaking at a workshop", "te": "వేదిక రక్ష — వర్క్‌షాప్‌లో మాట్లాడుతున్నారు" } }
+    ],
+    "social": [
+      { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/rvvedikaraksha", "handle": "@rvvedikaraksha" },
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/918074540299", "handle": "WhatsApp" }
+    ]
+  },
+
+  "nav": {
+    "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
+    "links": [
+      { "id": "profile", "label": { "en": "← Profile", "te": "← ప్రొఫైల్" }, "route": "/" },
+      { "id": "about", "label": { "en": "About", "te": "గురించి" } },
+      { "id": "challenges", "label": { "en": "Challenges", "te": "సవాళ్లు" } },
+      { "id": "learn", "label": { "en": "What You'll Learn", "te": "మీరు నేర్చుకునేవి" } },
+      { "id": "outcomes", "label": { "en": "Outcomes", "te": "ఫలితాలు" } },
+      { "id": "testimonials", "label": { "en": "Stories", "te": "కథలు" } },
+      { "id": "faq", "label": { "en": "FAQ", "te": "ప్రశ్నలు" } }
+    ]
+  },
+
+  "ui": {
+    "registerUrl": "https://www.instagram.com/rvvedikaraksha",
+    "cta": { "en": "Register for Free", "te": "ఉచితంగా నమోదు చేసుకోండి" },
+    "ctaSecondary": { "en": "Connect with Vedika", "te": "వేదికతో కనెక్ట్ అవ్వండి" },
+    "themeLight": { "en": "Light", "te": "లైట్" },
+    "themeDark": { "en": "Dark", "te": "డార్క్" },
+    "scrollTop": { "en": "Back to top", "te": "పైకి వెళ్లండి" }
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "attention": {
+        "en": "For women ready to build confidence, clarity and independence",
+        "te": "ఆత్మవిశ్వాసం, స్పష్టత, స్వాతంత్ర్యాన్ని నిర్మించుకోవాలనుకునే మహిళల కోసం"
+      },
+      "headline": {
+        "en": "Feeling stuck, overwhelmed or unsure of your next step?",
+        "te": "ఇరుక్కుపోయినట్లు, ఒత్తిడిగా, తదుపరి అడుగు ఏమిటో తెలియకుండా ఉన్నారా?"
+      },
+      "headlineAccent": {
+        "en": "Maybe it isn't a lack of ability — but a lack of confidence, clarity and support.",
+        "te": "ఇది సామర్థ్య లోపం కాదేమో — ఆత్మవిశ్వాసం, స్పష్టత, మద్దతు లోపమే కావచ్చు."
+      },
+      "description": {
+        "en": "A free live empowerment workshop — working with your mindset, confidence and emotions together, so you can rise into the life you want.",
+        "te": "ఉచిత లైవ్ సాధికారత వర్క్‌షాప్ — మీ మనోభావం, ఆత్మవిశ్వాసం, భావోద్వేగాలను కలిపి పనిచేయించడం, తద్వారా మీరు కోరుకునే జీవితంలోకి ఎదగగలరు."
+      },
+      "highlights": [
+        { "icon": "calendar", "label": { "en": "Next Workshop", "te": "తదుపరి వర్క్‌షాప్" }, "value": { "en": "27th June 2026", "te": "27 జూన్ 2026" } },
+        { "icon": "clock", "label": { "en": "Time", "te": "సమయం" }, "value": { "en": "6:30 – 8:00 PM IST", "te": "సాయంత్రం 6:30 – 8:00 IST" } },
+        { "icon": "language", "label": { "en": "Language", "te": "భాష" }, "value": { "en": "Telugu", "te": "తెలుగు" } },
+        { "icon": "video", "label": { "en": "Platform", "te": "వేదిక" }, "value": { "en": "Zoom LIVE", "te": "జూమ్ లైవ్" } }
+      ]
+    },
+
+    {
+      "id": "stats",
+      "type": "stats",
+      "items": [
+        { "value": 7, "suffix": "+", "label": { "en": "Years of Experience", "te": "సంవత్సరాల అనుభవం" } },
+        { "value": 1000, "suffix": "+", "label": { "en": "Women Empowered", "te": "సాధికారత పొందిన మహిళలు" } },
+        { "value": 100000, "suffix": "+", "label": { "en": "Women to Empower — the Mission", "te": "సాధికారత కల్పించాల్సిన మహిళలు — లక్ష్యం" } }
+      ]
+    },
+
+    {
+      "id": "challenges",
+      "type": "cardgrid",
+      "variant": "problems",
+      "heading": { "en": "Are You Facing These Challenges?", "te": "మీరు ఈ సవాళ్లను ఎదుర్కొంటున్నారా?" },
+      "subheading": {
+        "en": "If any of these feel familiar, you are not alone — and there is a way forward.",
+        "te": "వీటిలో ఏదైనా మీకు పరిచయంగా అనిపిస్తే, మీరు ఒంటరిగా లేరు — ముందుకు ఒక మార్గం ఉంది."
+      },
+      "items": [
+        { "icon": "drained", "title": { "en": "Low Confidence & Self-Doubt", "te": "తక్కువ ఆత్మవిశ్వాసం & ఆత్మ-సందేహం" }, "desc": { "en": "Second-guessing yourself and holding back from what you truly want.", "te": "మిమ్మల్ని మీరు అనుమానించుకుంటూ, మీరు నిజంగా కోరుకునేదాని నుండి వెనకడుగు వేస్తున్నారు." } },
+        { "icon": "balance", "title": { "en": "Financial Dependency", "te": "ఆర్థిక ఆధారపడటం" }, "desc": { "en": "Wanting your own income and independence but unsure where to start.", "te": "మీ సొంత ఆదాయం, స్వాతంత్ర్యం కావాలని కోరుకుంటున్నా ఎక్కడ మొదలుపెట్టాలో తెలియడం లేదు." } },
+        { "icon": "heart", "title": { "en": "Stress & Overwhelm", "te": "ఒత్తిడి & అలసట" }, "desc": { "en": "Carrying constant pressure and emotional exhaustion every day.", "te": "ప్రతిరోజూ నిరంతర ఒత్తిడి, భావోద్వేగ అలసటను మోస్తున్నారు." } },
+        { "icon": "compass", "title": { "en": "Lack of Clarity", "te": "స్పష్టత లోపం" }, "desc": { "en": "Unsure of your direction, goals or what you really want next.", "te": "మీ దిశ, లక్ష్యాలు, లేదా తదుపరి మీరు నిజంగా కోరుకునేది ఏమిటో తెలియడం లేదు." } },
+        { "icon": "question", "title": { "en": "Fear of Failure", "te": "వైఫల్య భయం" }, "desc": { "en": "Afraid to try, so opportunities quietly pass you by.", "te": "ప్రయత్నించడానికి భయపడి, అవకాశాలు నిశ్శబ్దంగా మీ చేయి జారిపోతున్నాయి." } },
+        { "icon": "balance", "title": { "en": "Work–Life Imbalance", "te": "పని–జీవిత అసమతుల్యత" }, "desc": { "en": "Stretched between everyone's needs with no time left for you.", "te": "అందరి అవసరాల మధ్య నలిగిపోతూ, మీ కోసం సమయమే మిగలడం లేదు." } },
+        { "icon": "missing", "title": { "en": "Low Self-Worth", "te": "తక్కువ ఆత్మగౌరవం" }, "desc": { "en": "Struggling to feel that your dreams and needs truly matter.", "te": "మీ కలలు, అవసరాలు నిజంగా ముఖ్యమైనవని భావించడంలో ఇబ్బంది పడుతున్నారు." } },
+        { "icon": "seed", "title": { "en": "Stuck in Personal Growth", "te": "వ్యక్తిగత ఎదుగుదలలో ఇరుక్కుపోవడం" }, "desc": { "en": "Knowing you're capable of more but unable to move forward.", "te": "మీరు మరింత సాధించగలరని తెలిసినా ముందుకు సాగలేకపోతున్నారు." } }
+      ]
+    },
+
+    {
+      "id": "audience",
+      "type": "cardgrid",
+      "variant": "audience",
+      "heading": { "en": "Who This Is Specially Designed For", "te": "ఇది ప్రత్యేకంగా ఎవరి కోసం రూపొందించబడింది" },
+      "subheading": {
+        "en": "Homemakers, working women and entrepreneurs (21–55) ready to grow in confidence and independence.",
+        "te": "ఆత్మవిశ్వాసం, స్వాతంత్ర్యంలో ఎదగాలనుకునే గృహిణులు, ఉద్యోగినులు, వ్యవస్థాపకులు (21–55)."
+      },
+      "items": [
+        { "icon": "heart", "title": { "en": "Homemakers", "te": "గృహిణులు" }, "desc": { "en": "Ready to rediscover their identity, confidence and purpose beyond daily routines.", "te": "రోజువారీ దినచర్యలకు మించి తమ గుర్తింపు, ఆత్మవిశ్వాసం, లక్ష్యాన్ని తిరిగి కనుగొనాలనుకునేవారు." } },
+        { "icon": "report", "title": { "en": "Working Women", "te": "ఉద్యోగినులు" }, "desc": { "en": "Wanting to grow, lead and balance career with their own wellbeing.", "te": "ఎదగాలని, నాయకత్వం వహించాలని, కెరీర్‌ను తమ శ్రేయస్సుతో సమతుల్యం చేసుకోవాలనుకునేవారు." } },
+        { "icon": "spark", "title": { "en": "Aspiring Entrepreneurs", "te": "ఔత్సాహిక వ్యవస్థాపకులు" }, "desc": { "en": "Ready to build skills, income and the confidence to start something of their own.", "te": "నైపుణ్యాలు, ఆదాయం, తమ సొంతంగా ఏదైనా ప్రారంభించే ఆత్మవిశ్వాసాన్ని నిర్మించుకోవాలనుకునేవారు." } },
+        { "icon": "compass", "title": { "en": "Women Seeking Direction", "te": "దిశ కోరుకునే మహిళలు" }, "desc": { "en": "Feeling stuck and ready for clarity, growth and a fresh start.", "te": "ఇరుక్కుపోయినట్లు భావిస్తూ, స్పష్టత, ఎదుగుదల, కొత్త ప్రారంభానికి సిద్ధంగా ఉన్నవారు." } }
+      ]
+    },
+
+    {
+      "id": "learn",
+      "type": "curriculum",
+      "heading": { "en": "What You'll Learn", "te": "మీరు ఏమి నేర్చుకుంటారు" },
+      "subheading": {
+        "en": "Real change begins when you work on your mindset, your emotions and your goals together.",
+        "te": "మీ మనోభావం, భావోద్వేగాలు, లక్ష్యాలపై కలిసి పనిచేసినప్పుడే నిజమైన మార్పు మొదలవుతుంది."
+      },
+      "modules": [
+        {
+          "tag": { "en": "Secret 1", "te": "రహస్యం 1" },
+          "title": { "en": "Rebuild Your Confidence", "te": "మీ ఆత్మవిశ్వాసాన్ని పునర్నిర్మించుకోండి" },
+          "image": "/images/learn-1.svg",
+          "points": [
+            { "en": "Where self-doubt really comes from", "te": "ఆత్మ-సందేహం నిజంగా ఎక్కడి నుండి వస్తుంది" },
+            { "en": "Identify your limiting beliefs", "te": "మిమ్మల్ని పరిమితం చేసే నమ్మకాలను గుర్తించండి" },
+            { "en": "Reconnect with your self-worth", "te": "మీ ఆత్మగౌరవంతో తిరిగి కలవండి" },
+            { "en": "Find and use your voice", "te": "మీ స్వరాన్ని కనుగొని ఉపయోగించండి" },
+            { "en": "A simple daily confidence practice", "te": "ఒక సరళమైన రోజువారీ ఆత్మవిశ్వాస అభ్యాసం" }
+          ]
+        },
+        {
+          "tag": { "en": "Secret 2", "te": "రహస్యం 2" },
+          "title": { "en": "Get Clarity & Set Goals", "te": "స్పష్టత పొంది లక్ష్యాలు పెట్టుకోండి" },
+          "image": "/images/learn-2.svg",
+          "points": [
+            { "en": "Discover what you truly want", "te": "మీరు నిజంగా కోరుకునేదాన్ని కనుగొనండి" },
+            { "en": "Turn vision into clear goals", "te": "దృక్పథాన్ని స్పష్టమైన లక్ష్యాలుగా మార్చండి" },
+            { "en": "A simple plan you can act on", "te": "మీరు అమలు చేయగల సరళమైన ప్రణాళిక" },
+            { "en": "Build new, supportive habits", "te": "కొత్త, తోడ్పడే అలవాట్లను నిర్మించుకోండి" },
+            { "en": "Make time for yourself, guilt-free", "te": "అపరాధభావం లేకుండా మీ కోసం సమయం కేటాయించండి" }
+          ]
+        },
+        {
+          "tag": { "en": "Secret 3", "te": "రహస్యం 3" },
+          "title": { "en": "Emotional Freedom & Resilience", "te": "భావోద్వేగ స్వేచ్ఛ & స్థితిస్థాపకత" },
+          "image": "/images/learn-3.svg",
+          "points": [
+            { "en": "Release fear, guilt and pressure", "te": "భయం, అపరాధభావం, ఒత్తిడిని విడుదల చేయండి" },
+            { "en": "Calm overwhelm and anxiety", "te": "అలసట, ఆందోళనను శాంతపరచండి" },
+            { "en": "Emotional change support tools", "te": "భావోద్వేగ మార్పు మద్దతు సాధనాలు" },
+            { "en": "Bounce back from setbacks", "te": "ఎదురుదెబ్బల నుండి తిరిగి నిలబడండి" },
+            { "en": "Clear next steps for your journey", "te": "మీ ప్రయాణానికి స్పష్టమైన తదుపరి అడుగులు" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "outcomes",
+      "type": "cardgrid",
+      "variant": "outcomes",
+      "heading": { "en": "Here's How Your Life Can Start Changing", "te": "మీ జీవితం ఇలా మారడం మొదలవుతుంది" },
+      "subheading": {
+        "en": "From self-doubt and overwhelm… to confidence, clarity and independence.",
+        "te": "ఆత్మ-సందేహం, అలసట నుండి… ఆత్మవిశ్వాసం, స్పష్టత, స్వాతంత్ర్యం వైపు."
+      },
+      "items": [
+        { "icon": "spark", "title": { "en": "Renewed Confidence", "te": "నవీకరించబడిన ఆత్మవిశ్వాసం" }, "desc": { "en": "Believe in yourself and act without constant self-doubt.", "te": "మీపై నమ్మకం పెట్టుకుని, నిరంతర ఆత్మ-సందేహం లేకుండా చర్య తీసుకోండి." } },
+        { "icon": "compass", "title": { "en": "Clarity & Direction", "te": "స్పష్టత & దిశ" }, "desc": { "en": "Know what you want and the steps to get there.", "te": "మీరు కోరుకునేది, అక్కడికి చేరే అడుగులు తెలుసుకోండి." } },
+        { "icon": "balance", "title": { "en": "Emotional Stability", "te": "భావోద్వేగ స్థిరత్వం" }, "desc": { "en": "Feel calmer, balanced and more in control of your emotions.", "te": "ప్రశాంతంగా, సమతుల్యంగా, మీ భావోద్వేగాలపై మరింత నియంత్రణతో ఉండండి." } },
+        { "icon": "heart", "title": { "en": "Less Stress & Fear", "te": "తగ్గిన ఒత్తిడి & భయం" }, "desc": { "en": "Release pressure and move forward feeling lighter.", "te": "ఒత్తిడిని విడిచి, తేలికగా అనుభూతి చెందుతూ ముందుకు సాగండి." } },
+        { "icon": "seed", "title": { "en": "Higher Self-Worth", "te": "పెరిగిన ఆత్మగౌరవం" }, "desc": { "en": "Value yourself, your needs and your dreams again.", "te": "మిమ్మల్ని, మీ అవసరాలు, మీ కలలను మళ్లీ విలువ ఇవ్వండి." } },
+        { "icon": "report", "title": { "en": "Skills for Independence", "te": "స్వాతంత్ర్యానికి నైపుణ్యాలు" }, "desc": { "en": "Know the practical next steps towards your own income.", "te": "మీ సొంత ఆదాయం వైపు ఆచరణాత్మక తదుపరి అడుగులు తెలుసుకోండి." } },
+        { "icon": "balance", "title": { "en": "Better Balance", "te": "మెరుగైన సమతుల్యత" }, "desc": { "en": "Make space for your goals alongside everyday life.", "te": "రోజువారీ జీవితంతో పాటు మీ లక్ష్యాలకు చోటు కల్పించండి." } },
+        { "icon": "spark", "title": { "en": "Hope & Motivation", "te": "ఆశ & ప్రేరణ" }, "desc": { "en": "Move forward with renewed energy and a positive mindset.", "te": "నవీకరించబడిన శక్తి, సానుకూల మనోభావంతో ముందుకు సాగండి." } }
+      ]
+    },
+
+    {
+      "id": "about",
+      "type": "about",
+      "greeting": { "en": "Namaste 🙏", "te": "నమస్తే 🙏" },
+      "heading": { "en": "I am RV Vedika Raksha", "te": "నేను ఆర్‌వి వేదిక రక్ష" },
+      "paragraphs": [
+        {
+          "en": "Vedika Raksha is a women's empowerment coach who helps women overcome self-doubt, build confidence, and create meaningful change in their personal and professional lives. Her work goes beyond motivation — focusing on mindset, emotional wellbeing and practical growth.",
+          "te": "వేదిక రక్ష ఒక మహిళా సాధికారత కోచ్. మహిళలు ఆత్మ-సందేహాన్ని అధిగమించి, ఆత్మవిశ్వాసాన్ని పెంచుకుని, తమ వ్యక్తిగత, వృత్తిపరమైన జీవితంలో అర్థవంతమైన మార్పును సృష్టించుకునేలా ఆమె సహాయం చేస్తారు. ఆమె పని కేవలం ప్రేరణకే పరిమితం కాదు — మనోభావం, భావోద్వేగ శ్రేయస్సు, ఆచరణాత్మక ఎదుగుదలపై దృష్టి పెడుతుంది."
+        },
+        {
+          "en": "She integrates confidence coaching, emotional change support and skill-building to help women find clarity, feel supported, and step into independent, purpose-driven lives.",
+          "te": "ఆత్మవిశ్వాస కోచింగ్, భావోద్వేగ మార్పు మద్దతు, నైపుణ్య నిర్మాణాన్ని కలిపి — మహిళలు స్పష్టత పొంది, మద్దతు అనుభవించి, స్వతంత్ర, లక్ష్యంతో కూడిన జీవితంలోకి అడుగుపెట్టేలా చేస్తారు."
+        }
+      ],
+      "credentials": [
+        { "en": "Empowered 1000+ women across India and the global Telugu community", "te": "భారతదేశం అంతటా, ప్రపంచ తెలుగు సముదాయంలో 1000+ మహిళలకు సాధికారత" },
+        { "en": "Confidence, mindset and emotional wellbeing mentor", "te": "ఆత్మవిశ్వాసం, మనోభావం, భావోద్వేగ శ్రేయస్సు మెంటర్" },
+        { "en": "Conducted 100+ transformational workshops and sessions", "te": "100+ పరివర్తనాత్మక వర్క్‌షాప్‌లు, సెషన్లు నిర్వహించారు" },
+        { "en": "Creator of a structured women's empowerment framework", "te": "ఒక నిర్మాణాత్మక మహిళా సాధికారత ఫ్రేమ్‌వర్క్ రూపకర్త" }
+      ],
+      "mission": {
+        "title": { "en": "My Mission", "te": "నా లక్ష్యం" },
+        "text": {
+          "en": "To empower 1,00,000 women with confidence, skills, mindset and opportunities so they can build independent, meaningful and successful lives.",
+          "te": "1,00,000 మంది మహిళలను ఆత్మవిశ్వాసం, నైపుణ్యాలు, మనోభావం, అవకాశాలతో శక్తివంతం చేసి, వారు స్వతంత్ర, అర్థవంతమైన, విజయవంతమైన జీవితాలను నిర్మించుకునేలా చేయడం."
+        }
+      }
+    },
+
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "heading": { "en": "Real Women. Real Transformations.", "te": "నిజమైన మహిళలు. నిజమైన మార్పులు." },
+      "subheading": {
+        "en": "Stories from women who found confidence, clarity and direction.",
+        "te": "ఆత్మవిశ్వాసం, స్పష్టత, దిశను పొందిన మహిళల కథలు."
+      },
+      "items": [
+        {
+          "quote": { "en": "Vedika helped me regain my confidence and start believing in myself again. I finally feel ready to chase what I want.", "te": "వేదిక నా ఆత్మవిశ్వాసాన్ని తిరిగి పొందడంలో, మళ్లీ నాపై నేను నమ్మకం పెట్టుకోవడంలో సహాయపడింది. నేను కోరుకున్నదాన్ని సాధించడానికి చివరికి సిద్ధంగా ఉన్నట్లు అనిపిస్తోంది." },
+          "author": { "en": "Anitha", "te": "అనిత" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "Her guidance completely transformed my mindset and helped me take real action instead of staying stuck.", "te": "ఆమె మార్గదర్శనం నా మనోభావాన్ని పూర్తిగా మార్చింది, ఇరుక్కుపోకుండా నిజమైన చర్య తీసుకునేలా సహాయపడింది." },
+          "author": { "en": "Sravani", "te": "శ్రావణి" },
+          "rating": 5
+        },
+        {
+          "quote": { "en": "I found clarity, confidence and a supportive community I can grow with. It changed how I see myself.", "te": "నేను స్పష్టత, ఆత్మవిశ్వాసం, నేను కలిసి ఎదగగల మద్దతు ఇచ్చే సముదాయాన్ని కనుగొన్నాను. నన్ను నేను చూసుకునే విధానాన్ని ఇది మార్చింది." },
+          "author": { "en": "Lakshmi", "te": "లక్ష్మి" },
+          "rating": 5
+        }
+      ],
+      "note": {
+        "en": "Experiences vary from person to person. These reflect personal journeys, not guaranteed outcomes.",
+        "te": "అనుభవాలు వ్యక్తికి వ్యక్తికి మారతాయి. ఇవి వ్యక్తిగత ప్రయాణాలను సూచిస్తాయి, హామీ ఇచ్చిన ఫలితాలు కాదు."
+      }
+    },
+
+    {
+      "id": "faq",
+      "type": "faq",
+      "heading": { "en": "Frequently Asked Questions", "te": "తరచుగా అడిగే ప్రశ్నలు" },
+      "items": [
+        { "q": { "en": "Is this workshop really free?", "te": "ఈ వర్క్‌షాప్ నిజంగా ఉచితమేనా?" }, "a": { "en": "Yes. This live empowerment workshop is completely free — just register to join.", "te": "అవును. ఈ లైవ్ సాధికారత వర్క్‌షాప్ పూర్తిగా ఉచితం — చేరడానికి నమోదు చేసుకోండి." } },
+        { "q": { "en": "Who is it for?", "te": "ఇది ఎవరి కోసం?" }, "a": { "en": "Homemakers, working women and aspiring entrepreneurs (21–55) who want more confidence, clarity and independence.", "te": "ఆత్మవిశ్వాసం, స్పష్టత, స్వాతంత్ర్యం కావాలనుకునే గృహిణులు, ఉద్యోగినులు, ఔత్సాహిక వ్యవస్థాపకుల (21–55) కోసం." } },
+        { "q": { "en": "Do I need any experience to join?", "te": "చేరడానికి ఏదైనా అనుభవం అవసరమా?" }, "a": { "en": "Not at all. Wherever you are starting from, this workshop meets you there.", "te": "అస్సలు అవసరం లేదు. మీరు ఎక్కడి నుండి మొదలుపెట్టినా, ఈ వర్క్‌షాప్ మిమ్మల్ని అక్కడే కలుస్తుంది." } },
+        { "q": { "en": "Will it help with emotional stress too?", "te": "ఇది భావోద్వేగ ఒత్తిడికి కూడా సహాయపడుతుందా?" }, "a": { "en": "Yes. Alongside confidence and clarity, we cover emotional change support to release fear, guilt and overwhelm.", "te": "అవును. ఆత్మవిశ్వాసం, స్పష్టతతో పాటు, భయం, అపరాధభావం, అలసటను విడుదల చేసే భావోద్వేగ మార్పు మద్దతును కవర్ చేస్తాం." } },
+        { "q": { "en": "What platform is it on?", "te": "ఇది ఏ ప్లాట్‌ఫారమ్‌లో ఉంటుంది?" }, "a": { "en": "It is a live session on Zoom, conducted in Telugu. You'll get the link after you register.", "te": "ఇది తెలుగులో జూమ్‌లో జరిగే లైవ్ సెషన్. నమోదు చేసుకున్న తర్వాత మీకు లింక్ లభిస్తుంది." } },
+        { "q": { "en": "How do I register?", "te": "నేను ఎలా నమోదు చేసుకోవాలి?" }, "a": { "en": "Tap “Register for Free” or DM Vedika on Instagram/WhatsApp to reserve your spot.", "te": "“ఉచితంగా నమోదు చేసుకోండి” నొక్కండి లేదా మీ స్థానాన్ని రిజర్వ్ చేసుకోవడానికి వేదికకు ఇన్‌స్టాగ్రామ్/వాట్సాప్‌లో DM చేయండి." } }
+      ]
+    },
+
+    {
+      "id": "cta",
+      "type": "cta",
+      "heading": { "en": "Ready to rise into your power?", "te": "మీ శక్తిలోకి ఎదగడానికి సిద్ధంగా ఉన్నారా?" },
+      "subheading": {
+        "en": "Join the next free live empowerment workshop and take the first confident step.",
+        "te": "తదుపరి ఉచిత లైవ్ సాధికారత వర్క్‌షాప్‌లో చేరి, మొదటి ఆత్మవిశ్వాస అడుగు వేయండి."
+      },
+      "workshop": {
+        "label": { "en": "Next Workshop", "te": "తదుపరి వర్క్‌షాప్" },
+        "date": { "en": "27th June 2026 · 6:30 PM IST", "te": "27 జూన్ 2026 · సాయంత్రం 6:30 IST" },
+        "targetIso": "2026-06-27T18:30:00+05:30"
+      }
+    }
+  ],
+
+  "footer": {
+    "legalLinks": [
+      { "label": { "en": "Terms & Conditions", "te": "నిబంధనలు & షరతులు" }, "route": "/vedika-raksha-profile-terms-conditions" },
+      { "label": { "en": "Privacy Policy", "te": "గోప్యతా విధానం" }, "route": "/vedika-raksha-profile-privacy-policy" },
+      { "label": { "en": "Refund & Cancellation", "te": "రీఫండ్ & రద్దు" }, "route": "/vedika-raksha-profile-refund-cancellation" }
+    ],
+    "disclaimer": {
+      "en": "This site is not part of, or endorsed by, Google Inc. or Facebook Inc. in any way.",
+      "te": "ఈ సైట్ Google Inc. లేదా Facebook Inc.లో భాగం కాదు, వాటిచే ఏ విధంగానూ ఆమోదించబడలేదు."
+    },
+    "copyright": { "en": "© Vedika Raksha. All Rights Reserved.", "te": "© వేదిక రక్ష. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి." }
+  }
+}
