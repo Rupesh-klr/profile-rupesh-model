@@ -1,0 +1,209 @@
+{
+  "slug": "rupesh-test-profile",
+  "displayName": "",
+  "plan": "free",
+  "published": true,
+  "pages": [
+    {
+      "slug": "home",
+      "title": "rupesh-test-profile",
+      "template": "profile-1",
+      "json": {
+        "meta": {
+          "templateName": "Profilo Designer",
+          "isDefault": true
+        },
+        "person": {
+          "name": {
+            "en": "rupesh",
+            "te": "మీ పేరు"
+          },
+          "title": {
+            "en": "Your Title / Role",
+            "te": "మీ హోదా / పాత్ర"
+          },
+          "tagline": {
+            "en": "This page is available. Paste your JSON in the preview, then publish.",
+            "te": "ఈ పేజీ అందుబాటులో ఉంది. ప్రివ్యూలో మీ JSON పేస్ట్ చేసి ప్రచురించండి."
+          },
+          "primaryLanguage": {
+            "en": "English",
+            "te": "తెలుగు"
+          },
+          "images": [
+            {
+              "src": "/images/placeholder.svg",
+              "alt": {
+                "en": "Portrait",
+                "te": "చిత్రం"
+              }
+            }
+          ],
+          "social": []
+        },
+        "nav": {
+          "brand": {
+            "en": "Profilo",
+            "te": "ప్రొఫైలో"
+          },
+          "links": [
+            {
+              "id": "cta",
+              "label": {
+                "en": "Start",
+                "te": "ప్రారంభం"
+              }
+            }
+          ]
+        },
+        "ui": {
+          "cta": {
+            "en": "Get started",
+            "te": "ప్రారంభించండి"
+          },
+          "ctaSecondary": {
+            "en": "Preview JSON",
+            "te": "JSON ప్రివ్యూ"
+          },
+          "themeLight": {
+            "en": "Light",
+            "te": "లైట్"
+          },
+          "themeDark": {
+            "en": "Dark",
+            "te": "డార్క్"
+          },
+          "scrollTop": {
+            "en": "Back to top",
+            "te": "పైకి వెళ్లండి"
+          }
+        },
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "variant": "1",
+            "attention": {
+              "en": "Profilo Designer · Free profile template",
+              "te": "ప్రొఫైలో డిజైనర్ · ఉచిత టెంప్లేట్"
+            },
+            "headline": {
+              "en": "This page is ready for your profile",
+              "te": "ఈ పేజీ మీ ప్రొఫైల్ కోసం సిద్ధంగా ఉంది"
+            },
+            "headlineAccent": {
+              "en": "Edit everything from one JSON",
+              "te": "ఒకే JSON నుండి అన్నీ మార్చండి"
+            },
+            "description": {
+              "en": "Choose a template, paste your JSON, preview it as a public page, then publish — no code.",
+              "te": "టెంప్లేట్ ఎంచుకోండి, JSON పేస్ట్ చేయండి, పబ్లిక్ పేజీగా ప్రివ్యూ చేసి ప్రచురించండి — కోడ్ అవసరం లేదు."
+            },
+            "highlights": [
+              {
+                "icon": "spark",
+                "label": {
+                  "en": "Template",
+                  "te": "టెంప్లేట్"
+                },
+                "value": {
+                  "en": "Pick a style",
+                  "te": "శైలి ఎంచుకోండి"
+                }
+              },
+              {
+                "icon": "language",
+                "label": {
+                  "en": "Languages",
+                  "te": "భాషలు"
+                },
+                "value": {
+                  "en": "EN + తె",
+                  "te": "EN + తె"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ai",
+            "type": "aisuggest",
+            "badge": {
+              "en": "AI suggestions",
+              "te": "AI సూచనలు"
+            },
+            "heading": {
+              "en": "AI suggestions for your page",
+              "te": "మీ పేజీకి AI సూచనలు"
+            },
+            "subheading": {
+              "en": "Smart, automatic ideas to improve your profile — available on the Advanced plan.",
+              "te": "మీ ప్రొఫైల్‌ను మెరుగుపరచడానికి స్మార్ట్, ఆటోమేటిక్ ఆలోచనలు — అడ్వాన్స్‌డ్ ప్లాన్‌లో అందుబాటులో."
+            },
+            "lockedTitle": {
+              "en": "AI automation suggestions",
+              "te": "AI ఆటోమేషన్ సూచనలు"
+            },
+            "lockedText": {
+              "en": "Upgrade to Advanced (₹100/year) to unlock AI-powered suggestions for your page.",
+              "te": "మీ పేజీకి AI సూచనలను అన్‌లాక్ చేయడానికి అడ్వాన్స్‌డ్‌కి (₹100/సంవత్సరం) అప్‌గ్రేడ్ చేయండి."
+            },
+            "items": [
+              {
+                "icon": "spark",
+                "title": {
+                  "en": "Sharper headline",
+                  "te": "మెరుగైన హెడ్‌లైన్"
+                },
+                "desc": {
+                  "en": "AI rewrites your hero headline for more impact.",
+                  "te": "మరింత ప్రభావం కోసం మీ హీరో హెడ్‌లైన్‌ను AI తిరిగి రాస్తుంది."
+                }
+              },
+              {
+                "icon": "report",
+                "title": {
+                  "en": "SEO keywords",
+                  "te": "SEO కీవర్డ్‌లు"
+                },
+                "desc": {
+                  "en": "Suggested keywords and meta description for your niche.",
+                  "te": "మీ రంగానికి సూచించిన కీవర్డ్‌లు, మెటా వివరణ."
+                }
+              },
+              {
+                "icon": "heart",
+                "title": {
+                  "en": "Section ideas",
+                  "te": "విభాగ ఆలోచనలు"
+                },
+                "desc": {
+                  "en": "Recommends sections to add based on your goals.",
+                  "te": "మీ లక్ష్యాల ఆధారంగా జోడించాల్సిన విభాగాలను సూచిస్తుంది."
+                }
+              }
+            ]
+          },
+          {
+            "id": "cta",
+            "type": "cta",
+            "heading": {
+              "en": "Make this page yours",
+              "te": "ఈ పేజీని మీదిగా చేసుకోండి"
+            },
+            "subheading": {
+              "en": "Create a profile, paste your JSON and publish to this address.",
+              "te": "ఒక ప్రొఫైల్ సృష్టించి, మీ JSON పేస్ట్ చేసి ఈ చిరునామాకు ప్రచురించండి."
+            }
+          }
+        ],
+        "footer": {
+          "copyright": {
+            "en": "© Profilo Designer",
+            "te": "© ప్రొఫైలో డిజైనర్"
+          }
+        }
+      }
+    }
+  ],
+  "updatedAt": "2026-06-17T10:52:32.531Z"
+}
