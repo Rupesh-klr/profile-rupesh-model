@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchPlans } from '../config/api.js';
+import Reveal from '../components/Reveal.jsx';
 
 /**
  * Route "/" — onboarding / landing page for the Profilo platform.
- * Explains the product (no-code, JSON-driven profile sites — like Canva, but
- * configurable like code), the two plans, and how publishing + HTML export work.
- * Plan numbers come from the API (/plans) with a local fallback, so they stay in
- * one place.
+ * Premium glass + motion + lighting. Explains the product, plans, and flow.
+ * Plan numbers come from the API (/plans) with a local fallback.
  */
 const FALLBACK_PLANS = {
   free: { id: 'free', label: 'Free', priceInr: 0, billing: 'free', maxPages: 10, features: { aiSuggestions: false, htmlExport: true } },
@@ -42,9 +41,7 @@ export default function Onboarding() {
 
   useEffect(() => {
     let alive = true;
-    fetchPlans()
-      .then((p) => { if (alive && p) setPlans(p); })
-      .catch(() => {});
+    fetchPlans().then((p) => { if (alive && p) setPlans(p); }).catch(() => {});
     return () => { alive = false; };
   }, []);
 
@@ -54,8 +51,10 @@ export default function Onboarding() {
     <div className="onb">
       {/* Hero */}
       <header className="onb-hero">
-        <div className="container">
-          <span className="eyebrow">Profilo Designer · No-code profile pages</span>
+        <span className="onb-orb o1" />
+        <span className="onb-orb o2" />
+        <div className="container onb-hero-inner">
+          <span className="onb-pill"><span className="dot" /> Live · Free · No-code profile builder</span>
           <h1 className="display onb-title">
             Your profile page,<br />
             <span className="gradient-text">built from one JSON.</span>
@@ -76,67 +75,67 @@ export default function Onboarding() {
       {/* Mission & Vision */}
       <section className="section container">
         <div className="onb-grid onb-mv">
-          <div className="glass onb-card">
+          <Reveal className="glass onb-card" variant="left">
             <span className="eyebrow">Our mission</span>
             <h3>Put everyone's work online — free</h3>
             <p>To help every student and working professional publish a beautiful, credible profile in minutes — no code, and no paywall just to be seen.</p>
-          </div>
-          <div className="glass onb-card">
+          </Reveal>
+          <Reveal className="glass onb-card" variant="right" delay={120}>
             <span className="eyebrow">Our vision</span>
             <h3>A profile you truly own</h3>
             <p>A customizable, portable profile you control: edit it anytime from one JSON, host it anywhere, never get locked in. Your work should speak for itself.</p>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Who it's for */}
       <section className="section container">
-        <h2 className="display section-title" style={{ textAlign: 'center' }}>Who it's for</h2>
+        <Reveal><h2 className="display section-title" style={{ textAlign: 'center' }}>Who it's for</h2></Reveal>
         <p className="section-sub" style={{ textAlign: 'center' }}>One profile, many use-cases — all free and fully customizable.</p>
         <div className="onb-grid onb-features">
-          {USECASES.map(([title, desc]) => (
-            <div key={title} className="glass onb-card">
+          {USECASES.map(([title, desc], i) => (
+            <Reveal key={title} className="glass onb-card" variant="zoom" delay={i * 70}>
               <h3>{title}</h3>
               <p>{desc}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* How it works */}
       <section className="section container">
-        <h2 className="display section-title" style={{ textAlign: 'center' }}>How it works</h2>
+        <Reveal><h2 className="display section-title" style={{ textAlign: 'center' }}>How it works</h2></Reveal>
         <div className="onb-grid onb-steps">
-          {STEPS.map(([n, title, desc]) => (
-            <div key={n} className="glass onb-card">
+          {STEPS.map(([n, title, desc], i) => (
+            <Reveal key={n} className="glass onb-card" variant="zoom" delay={i * 70}>
               <span className="onb-step-num">{n}</span>
               <h3>{title}</h3>
               <p>{desc}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* Features */}
       <section className="section container">
-        <h2 className="display section-title" style={{ textAlign: 'center' }}>Why Profilo</h2>
+        <Reveal><h2 className="display section-title" style={{ textAlign: 'center' }}>Why Profilo</h2></Reveal>
         <div className="onb-grid onb-features">
-          {FEATURES.map(([title, desc]) => (
-            <div key={title} className="glass onb-card">
+          {FEATURES.map(([title, desc], i) => (
+            <Reveal key={title} className="glass onb-card" variant="zoom" delay={i * 60}>
               <h3>{title}</h3>
               <p>{desc}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* Plans */}
       <section className="section container">
-        <h2 className="display section-title" style={{ textAlign: 'center' }}>Simple pricing</h2>
+        <Reveal><h2 className="display section-title" style={{ textAlign: 'center' }}>Simple pricing</h2></Reveal>
         <p className="section-sub" style={{ textAlign: 'center' }}>Start free. Upgrade only if you need more pages and AI suggestions.</p>
         <div className="onb-grid onb-plans">
-          {Object.values(plans).map((p) => (
-            <div key={p.id} className={`glass onb-plan ${p.id === 'advanced' ? 'onb-plan--featured' : ''}`}>
+          {Object.values(plans).map((p, i) => (
+            <Reveal key={p.id} className={`glass onb-plan ${p.id === 'advanced' ? 'onb-plan--featured' : ''}`} variant="zoom" delay={i * 90}>
               <h3 className="onb-plan-name">{p.label}</h3>
               <div className="onb-plan-price">{priceLabel(p)}</div>
               <ul className="onb-plan-list">
@@ -148,19 +147,21 @@ export default function Onboarding() {
               <Link className={`btn ${p.id === 'advanced' ? 'btn-primary' : 'btn-ghost'}`} to="/preview">
                 {p.priceInr ? 'Go Advanced' : 'Start free'}
               </Link>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="section container" style={{ textAlign: 'center' }}>
-        <h2 className="display section-title">Ready to build your page?</h2>
-        <div className="onb-cta" style={{ justifyContent: 'center' }}>
-          <Link className="btn btn-primary" to="/preview">Open the preview</Link>
-          <Link className="btn btn-ghost" to="/vedika-raksha-profile">View a demo</Link>
-        </div>
-        <p style={{ opacity: 0.6, marginTop: '1.5rem', fontSize: '.9rem' }}>© Profilo Designer</p>
+        <Reveal>
+          <h2 className="display section-title">Ready to build your page?</h2>
+          <div className="onb-cta" style={{ justifyContent: 'center' }}>
+            <Link className="btn btn-primary" to="/preview">Open the preview</Link>
+            <Link className="btn btn-ghost" to="/vedika-raksha-profile">View a demo</Link>
+          </div>
+          <p style={{ opacity: 0.6, marginTop: '1.5rem', fontSize: '.9rem' }}>© Profilo Designer</p>
+        </Reveal>
       </section>
     </div>
   );

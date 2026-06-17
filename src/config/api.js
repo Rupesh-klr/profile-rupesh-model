@@ -23,15 +23,43 @@ export async function fetchPlans() {
   return (await res.json()).data?.plans;
 }
 
-/* ---------------- publish / deploy from the preview ---------------- */
+/* ---------------- accounts, publish & edit ---------------- */
 
-async function sendJson(method, url, body, token) {
-  const res = await fetch(url, {
+// Dev verification OTP — the API is "out of credits", so a fixed code is used.
+export const DEV_OTP = '123123';
+
+// — session persistence (shared by AuthContext + all authed calls) —
+const TOKEN_KEY = 'profilo_token';
+const USER_KEY = 'profilo_user';
+export function getStoredToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || null; } catch { return null; }
+}
+export function getStoredUser() {
+  try { return JSON.parse(localStorage.getItem(USER_KEY) || 'null'); } catch { return null; }
+}
+export function setSession(token, user) {
+  try {
+    if (token) localStorage.setItem(TOKEN_KEY, token);
+    if (user) localStorage.setItem(USER_KEY, JSON.stringify(user));
+  } catch { /* ignore */ }
+}
+export function clearSession() {
+  try { localStorage.removeItem(TOKEN_KEY); localStorage.removeItem(USER_KEY); } catch { /* ignore */ }
+}
+
+function authHeaders(auth = {}) {
+  const h = { 'Content-Type': 'application/json' };
+  // Explicit token/editKey wins; otherwise fall back to the logged-in session.
+  const token = auth.token || (auth.editKey ? null : getStoredToken());
+  if (token) h.Authorization = `Bearer ${token}`;
+  if (auth.editKey) h['x-edit-key'] = auth.editKey;
+  return h;
+}
+
+async function api(method, path, { body, auth } = {}) {
+  const res = await fetch(`${PROFILES_API}${path}`, {
     method,
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
+    headers: authHeaders(auth),
     body: body ? JSON.stringify(body) : undefined,
   });
   const data = await res.json().catch(() => ({}));
@@ -39,53 +67,75 @@ async function sendJson(method, url, body, token) {
   return data.data;
 }
 
-export const profileSignup = (email, password, name) =>
-  sendJson('POST', `${PROFILES_API}/auth/signup`, { email, password, name });
-export const profileLogin = (email, password) =>
-  sendJson('POST', `${PROFILES_API}/auth/login`, { email, password });
+// — auth (username-based; OTP-gated signup/reset) —
+export const profileSignup = (username, password, otp, extra = {}) =>
+  api('POST', '/auth/signup', { body: { username, password, otp, ...extra } });
+export const profileLogin = (username, password) =>
+  api('POST', '/auth/login', { body: { username, password } });
+export const forgotPassword = (username, otp, newPassword) =>
+  api('POST', '/auth/forgot', { body: { username, otp, newPassword } });
 
-/** Login if the account exists, otherwise create it. Returns { token, user }. */
-export async function signupOrLogin(email, password, name) {
+/** Login if the account exists, otherwise create it (OTP-gated). Returns { token, user }. */
+export async function signupOrLogin(username, password, otp, extra) {
   try {
-    return await profileLogin(email, password);
+    return await profileLogin(username, password);
   } catch (e) {
     if (e.status !== 401) throw e;
-    // 401 = either no account yet, or wrong password. Try to create it.
     try {
-      return await profileSignup(email, password, name);
+      return await profileSignup(username, password, otp, extra);
     } catch (e2) {
       if (e2.status === 409) {
-        throw new Error('This email is already registered — please check your password.');
+        throw new Error('Username already exists — check your password (or reset it).');
       }
       throw e2;
     }
   }
 }
 
-/**
- * One-call deploy from the preview: ensure an account, create (or update if you
- * already own the slug) the profile from the pasted JSON, publish it, and return
- * the live path + the one-time editKey.
- */
-export async function deployProfile({ slug, email, password, displayName, doc }) {
-  const { token } = await signupOrLogin(email, password, displayName);
+// — profile read/write (auth = { token } or { editKey }) —
+export const fetchAdminProfile = (slug, auth) => api('GET', `/${encodeURIComponent(slug)}/admin`, { auth });
+export const updateProfile = (slug, body, auth) => api('PUT', `/${encodeURIComponent(slug)}`, { body, auth });
+export const publishProfile = (slug, auth) => api('POST', `/${encodeURIComponent(slug)}/publish`, { auth });
+
+const buildPages = (doc, displayName, slug) => {
   const variant = doc?.sections?.[0]?.variant;
-  const pages = [{ slug: 'home', title: displayName || slug, template: variant ? `profile-${variant}` : 'profile-1', json: doc }];
+  return [{ slug: 'home', title: displayName || slug, template: variant ? `profile-${variant}` : 'profile-1', json: doc }];
+};
+
+/**
+ * One-call deploy from the preview: ensure an account (OTP-gated), create (or
+ * update if you already own the slug) the profile, publish it, and return the
+ * live path + the one-time editKey.
+ */
+export async function deployProfile({ slug, username, password, otp, displayName, email, doc }) {
+  // Use the logged-in session if present; otherwise sign up / log in.
+  let token = getStoredToken();
+  if (!token) {
+    ({ token } = await signupOrLogin(username, password, otp, { email, name: displayName }));
+  }
+  const pages = buildPages(doc, displayName, slug);
 
   let editKey = null;
   try {
-    const res = await sendJson('POST', PROFILES_API, { slug, displayName, pages }, token);
+    const res = await api('POST', '', { body: { slug, displayName, pages }, auth: { token } });
     editKey = res.editKey;
   } catch (e) {
     if (e.status === 409) {
-      // Slug exists — update it (succeeds only if this account owns it).
-      await sendJson('PUT', `${PROFILES_API}/${encodeURIComponent(slug)}`, { displayName, pages }, token);
+      await updateProfile(slug, { displayName, pages }, { token }); // we own it → update
     } else {
       throw e;
     }
   }
-  await sendJson('POST', `${PROFILES_API}/${encodeURIComponent(slug)}/publish`, {}, token);
+  await publishProfile(slug, { token });
   return { url: `/p/${slug}`, editKey, token };
+}
+
+/** Save edits to an existing profile's home page and (re)publish. */
+export async function saveAndPublish(slug, { doc, displayName }, auth) {
+  const pages = buildPages(doc, displayName, slug);
+  await updateProfile(slug, { displayName, pages }, auth);
+  await publishProfile(slug, auth);
+  return { url: `/p/${slug}` };
 }
 
 /**

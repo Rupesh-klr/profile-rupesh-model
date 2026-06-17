@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '../components/SiteLayout.jsx';
 import sample from '../data/default-template.json';
 import { buildProfileHtml, downloadHtml, slugify } from '../utils/exportHtml.js';
 import { deployProfile } from '../config/api.js';
+import { useAuth } from '../context/AuthContext.jsx';
 
 const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{1,38}[a-z0-9])?$/;
 
@@ -23,11 +25,12 @@ function initialText() {
 }
 
 export default function PreviewPage() {
+  const { isAuthenticated, user } = useAuth();
   const [text, setText] = useState(initialText);
   const [doc, setDoc] = useState(null);
   const [error, setError] = useState('');
   const [showPublish, setShowPublish] = useState(false);
-  const [pub, setPub] = useState({ slug: '', email: '', password: '', name: '' });
+  const [pub, setPub] = useState({ slug: '', username: '', password: '', otp: '123123', name: '', email: '' });
   const [pubBusy, setPubBusy] = useState(false);
   const [pubError, setPubError] = useState('');
   const [pubResult, setPubResult] = useState(null);
@@ -76,18 +79,26 @@ export default function PreviewPage() {
       setPubError('Slug must be 2–40 chars: lowercase letters, numbers and dashes.');
       return;
     }
-    if (pub.password.length < 6) {
-      setPubError('Password must be at least 6 characters.');
-      return;
+    if (!isAuthenticated) {
+      if (!/^[a-z0-9_.-]{3,30}$/.test(pub.username)) {
+        setPubError('Username: 3–30 chars (a–z, 0–9, dot, dash, underscore).');
+        return;
+      }
+      if (pub.password.length < 6) {
+        setPubError('Password must be at least 6 characters.');
+        return;
+      }
     }
     setPubBusy(true);
     setPubError('');
     try {
       const res = await deployProfile({
         slug: pub.slug,
-        email: pub.email,
+        username: pub.username,
         password: pub.password,
+        otp: pub.otp,
         displayName: pub.name,
+        email: pub.email,
         doc: parsed,
       });
       setPubResult(res);
@@ -158,19 +169,40 @@ export default function PreviewPage() {
           ) : (
             <>
               <h3 style={{ margin: '0 0 .35rem' }}>Publish this page</h3>
-              <p style={{ margin: '0 0 .7rem', opacity: 0.75, fontSize: '.9rem' }}>
-                Creates an account (or logs in), publishes to <code style={code}>/p/&lt;slug&gt;</code>, and
-                returns an edit key. Your account is separate from any other login.
-              </p>
+              {isAuthenticated ? (
+                <p style={{ margin: '0 0 .7rem', opacity: 0.8, fontSize: '.9rem' }}>
+                  Publishing as <b>{user?.name || user?.username}</b>. Pick a slug and deploy to{' '}
+                  <code style={code}>/p/&lt;slug&gt;</code>.
+                </p>
+              ) : (
+                <>
+                  <p style={{ margin: '0 0 .6rem', opacity: 0.75, fontSize: '.9rem' }}>
+                    Creates an account (or logs in), publishes to <code style={code}>/p/&lt;slug&gt;</code>, and
+                    returns an edit key. Or <Link to="/login">log in</Link> first.
+                  </p>
+                  <div style={otpBanner}>
+                    🔐 Dev mode: we're out of SMS/email credits, so the verification OTP is{' '}
+                    <b>123123</b> (pre-filled).
+                  </div>
+                </>
+              )}
               <div style={formGrid}>
-                <input style={input} placeholder="slug (e.g. rupesh)" value={pub.slug}
+                <input style={input} placeholder="page slug (e.g. rupesh-test-profile)" value={pub.slug}
                   onChange={(e) => setPub({ ...pub, slug: e.target.value.toLowerCase() })} />
                 <input style={input} placeholder="display name (optional)" value={pub.name}
                   onChange={(e) => setPub({ ...pub, name: e.target.value })} />
-                <input style={input} type="email" placeholder="email" value={pub.email}
-                  onChange={(e) => setPub({ ...pub, email: e.target.value })} />
-                <input style={input} type="password" placeholder="password (min 6)" value={pub.password}
-                  onChange={(e) => setPub({ ...pub, password: e.target.value })} />
+                {!isAuthenticated && (
+                  <>
+                    <input style={input} placeholder="username" value={pub.username}
+                      onChange={(e) => setPub({ ...pub, username: e.target.value.toLowerCase() })} />
+                    <input style={input} type="password" placeholder="password (min 6)" value={pub.password}
+                      onChange={(e) => setPub({ ...pub, password: e.target.value })} />
+                    <input style={input} placeholder="OTP (123123)" value={pub.otp}
+                      onChange={(e) => setPub({ ...pub, otp: e.target.value })} />
+                    <input style={input} type="email" placeholder="email (optional, can repeat)" value={pub.email}
+                      onChange={(e) => setPub({ ...pub, email: e.target.value })} />
+                  </>
+                )}
               </div>
               {pubError && <div style={{ ...err, marginTop: '.6rem' }}>{pubError}</div>}
               <button style={{ ...btnPrimary, marginTop: '.7rem', opacity: pubBusy ? 0.6 : 1 }}
@@ -217,3 +249,4 @@ const panel = { border: '1px solid #e3d9ec', background: '#faf6fe', borderRadius
 const formGrid = { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '.5rem' };
 const input = { padding: '.55rem .7rem', borderRadius: 8, border: '1px solid #ccc', fontSize: 14 };
 const code = { background: '#efe7f7', padding: '.1rem .4rem', borderRadius: 6, fontFamily: 'ui-monospace, Menlo, Consolas, monospace' };
+const otpBanner = { background: '#fff7e6', border: '1px solid #f0d28a', color: '#7a5b00', padding: '.5rem .7rem', borderRadius: 8, fontSize: '.85rem', margin: '0 0 .7rem' };
