@@ -59,7 +59,8 @@ export default function Onboarding() {
             self-contained HTML you can host anywhere.
           </p>
           <div className="onb-cta">
-            <Link className="btn btn-primary" to="/preview">Try the live preview</Link>
+            <Link className="btn btn-primary" to="/templates">Browse templates</Link>
+            <Link className="btn btn-ghost" to="/preview">Try the live preview</Link>
             <Link className="btn btn-ghost" to="/vedika-raksha-profile">See a live demo</Link>
           </div>
         </div>

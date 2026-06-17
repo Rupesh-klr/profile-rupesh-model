@@ -1,0 +1,112 @@
+{
+  "meta": { "templateName": "Profilo", "template": "dev-2to3-fullstack-1", "role": "Full-Stack", "level": "2-3 yrs", "model": 1, "note": "Full-stack developer (2–3 yrs), model 1." },
+  "person": {
+    "name": "Riya Sharma",
+    "title": "Full-Stack Developer",
+    "tagline": "I build and ship reliable web apps end to end — from database to UI.",
+    "location": "Hyderabad, India",
+    "primaryLanguage": "2.5 years experience",
+    "images": [{ "src": "/images/placeholder.svg", "alt": "Riya Sharma" }],
+    "social": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/your-handle", "handle": "@your-handle" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle", "handle": "in/your-handle" },
+      { "id": "mail", "label": "Email", "url": "mailto:you@email.com", "handle": "you@email.com" }
+    ]
+  },
+  "nav": {
+    "brand": "Riya Sharma",
+    "links": [
+      { "id": "about", "label": "About" },
+      { "id": "skills", "label": "Stack" },
+      { "id": "projects", "label": "Work" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "ui": { "cta": "Work with me", "ctaSecondary": "See my work", "themeLight": "Light", "themeDark": "Dark", "scrollTop": "Back to top" },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "variant": "1",
+      "attention": "Full-Stack Developer · React + Node · 2.5 yrs",
+      "headline": "I ship web apps, end to end",
+      "headlineAccent": "React · Node.js · PostgreSQL · AWS",
+      "description": "Full-stack developer with 2.5 years building production web apps. I care about clean APIs, fast UIs and code that's easy for the next person to read.",
+      "highlights": [
+        { "icon": "code", "label": "Role", "value": "Full-Stack" },
+        { "icon": "spark", "label": "Experience", "value": "2.5 years" },
+        { "icon": "rocket", "label": "Shipped", "value": "15+ features" },
+        { "icon": "pin", "label": "Based in", "value": "Hyderabad" }
+      ]
+    },
+    {
+      "id": "stats", "type": "stats",
+      "items": [
+        { "value": 2, "suffix": ".5 yrs", "label": "Experience" },
+        { "value": 15, "suffix": "+", "label": "Features Shipped" },
+        { "value": 3, "suffix": "", "label": "Products Worked On" }
+      ]
+    },
+    {
+      "id": "about", "type": "about",
+      "greeting": "Hi 👋", "heading": "About me",
+      "paragraphs": [
+        "I'm a full-stack developer who enjoys owning a feature from idea to production — designing the data model, building the API, and crafting the UI.",
+        "I work mostly in the JavaScript/TypeScript ecosystem, write tests for the things that matter, and like keeping deployments boring and reliable."
+      ],
+      "credentials": [
+        "2.5 years building production React + Node apps",
+        "Owned features used by 50k+ monthly users",
+        "Comfortable across DB, API and frontend",
+        "Mentored 2 junior developers"
+      ]
+    },
+    {
+      "id": "skills", "type": "cardgrid", "variant": "audience",
+      "heading": "My Stack",
+      "subheading": "Tools I reach for.",
+      "items": [
+        { "icon": "spark", "title": "Frontend", "desc": "React, Next.js, TypeScript, Tailwind, Redux/Zustand." },
+        { "icon": "report", "title": "Backend", "desc": "Node/Express, NestJS, REST & GraphQL, Prisma." },
+        { "icon": "database", "title": "Data", "desc": "PostgreSQL, MongoDB, Redis, schema design." },
+        { "icon": "cloud", "title": "DevOps", "desc": "Docker, AWS (EC2/S3/RDS), GitHub Actions CI/CD." }
+      ]
+    },
+    {
+      "id": "projects", "type": "cardgrid", "variant": "outcomes",
+      "heading": "Selected Work",
+      "subheading": "A few things I've built and shipped.",
+      "items": [
+        { "icon": "rocket", "title": "Billing Dashboard", "desc": "Rebuilt a React + Node billing dashboard; cut page load from 4s to 0.9s and reduced support tickets 30%." },
+        { "icon": "link2", "title": "Public API & SDK", "desc": "Designed a versioned REST API with docs and a JS SDK; onboarded 40+ integration partners." },
+        { "icon": "report", "title": "Analytics Pipeline", "desc": "Event pipeline (Node, PostgreSQL, Redis) powering real-time product dashboards." }
+      ]
+    },
+    {
+      "id": "experience", "type": "statement", "number": "01", "icon": "code",
+      "eyebrow": "Experience",
+      "heading": "Where I've worked",
+      "body": [
+        "Software Engineer, ProductCo (2024–present) — full-stack feature work on a B2B SaaS used by 50k+ users.",
+        "Junior Developer, StartupX (2022–2024) — shipped the customer portal and internal admin tools from scratch."
+      ],
+      "points": [
+        "Led the migration to TypeScript across the frontend",
+        "Set up CI/CD that cut release time in half",
+        "On-call rotation: improved error tracking & alerts",
+        "Code review culture advocate"
+      ]
+    },
+    {
+      "id": "contact", "type": "contact",
+      "heading": "Let's build something",
+      "subheading": "Open to full-time and freelance full-stack work.",
+      "items": [
+        { "icon": "mail", "label": "Email", "value": "you@email.com", "href": "mailto:you@email.com" },
+        { "icon": "github", "label": "GitHub", "value": "@your-handle", "href": "https://github.com/your-handle" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "in/your-handle", "href": "https://linkedin.com/in/your-handle" }
+      ]
+    },
+    { "id": "cta", "type": "cta", "heading": "Need a full-stack developer who ships?", "subheading": "Let's talk — I reply within a day." }
+  ],
+  "footer": { "copyright": "© Riya Sharma" }
+}

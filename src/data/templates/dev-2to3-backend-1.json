@@ -1,0 +1,112 @@
+{
+  "meta": { "templateName": "Profilo", "template": "dev-2to3-backend-1", "role": "Backend", "level": "2-3 yrs", "model": 1, "note": "Backend developer (2–3 yrs), model 1." },
+  "person": {
+    "name": "Neha Gupta",
+    "title": "Backend Developer",
+    "tagline": "I design APIs and data systems that stay fast and correct under load.",
+    "location": "Gurugram, India",
+    "primaryLanguage": "3 years experience",
+    "images": [{ "src": "/images/placeholder.svg", "alt": "Neha Gupta" }],
+    "social": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/your-handle", "handle": "@your-handle" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle", "handle": "in/your-handle" },
+      { "id": "mail", "label": "Email", "url": "mailto:you@email.com", "handle": "you@email.com" }
+    ]
+  },
+  "nav": {
+    "brand": "Neha Gupta",
+    "links": [
+      { "id": "about", "label": "About" },
+      { "id": "skills", "label": "Stack" },
+      { "id": "projects", "label": "Work" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "ui": { "cta": "Work with me", "ctaSecondary": "See my work", "themeLight": "Light", "themeDark": "Dark", "scrollTop": "Back to top" },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "variant": "1",
+      "attention": "Backend Developer · APIs & Data · 3 yrs",
+      "headline": "Reliable APIs and data systems",
+      "headlineAccent": "Node · Java · PostgreSQL · Kafka",
+      "description": "Backend developer focused on well-designed APIs, solid data modelling, and services that stay correct and fast as they scale.",
+      "highlights": [
+        { "icon": "report", "label": "Role", "value": "Backend" },
+        { "icon": "spark", "label": "Experience", "value": "3 years" },
+        { "icon": "link2", "label": "Focus", "value": "APIs & Data" },
+        { "icon": "pin", "label": "Based in", "value": "Gurugram" }
+      ]
+    },
+    {
+      "id": "stats", "type": "stats",
+      "items": [
+        { "value": 3, "suffix": " yrs", "label": "Experience" },
+        { "value": 40, "suffix": "+", "label": "APIs Shipped" },
+        { "value": 99, "suffix": ".9%", "label": "Service Uptime" }
+      ]
+    },
+    {
+      "id": "about", "type": "about",
+      "greeting": "Hi 👋", "heading": "About me",
+      "paragraphs": [
+        "I'm a backend developer who enjoys the hard parts — data modelling, concurrency, queues, and keeping latency low while traffic grows.",
+        "I write clear, well-tested services and care about observability so problems are easy to find and fix."
+      ],
+      "credentials": [
+        "3 years building production backend services",
+        "Designed APIs serving 5M+ requests/day",
+        "Strong in SQL, schema design and query tuning",
+        "Built event-driven systems with Kafka/queues"
+      ]
+    },
+    {
+      "id": "skills", "type": "cardgrid", "variant": "audience",
+      "heading": "My Stack",
+      "subheading": "What I build with.",
+      "items": [
+        { "icon": "code", "title": "Languages", "desc": "Node/TypeScript, Java/Spring, Go (learning), SQL." },
+        { "icon": "link2", "title": "APIs", "desc": "REST, GraphQL, gRPC, API design & versioning." },
+        { "icon": "database", "title": "Data", "desc": "PostgreSQL, MongoDB, Redis, Kafka, indexing & tuning." },
+        { "icon": "cloud", "title": "Infra", "desc": "Docker, Kubernetes basics, AWS, CI/CD, monitoring." }
+      ]
+    },
+    {
+      "id": "projects", "type": "cardgrid", "variant": "outcomes",
+      "heading": "Selected Work",
+      "subheading": "Backends I've designed and shipped.",
+      "items": [
+        { "icon": "link2", "title": "Payments Service", "desc": "Idempotent payments API (Node, PostgreSQL); processed ₹10Cr+ with zero double-charges." },
+        { "icon": "database", "title": "Search & Indexing", "desc": "Rebuilt product search on Elasticsearch; p95 latency 800ms → 120ms." },
+        { "icon": "report", "title": "Event Pipeline", "desc": "Kafka-based pipeline feeding analytics and notifications at 5M events/day." }
+      ]
+    },
+    {
+      "id": "experience", "type": "statement", "number": "01", "icon": "report",
+      "eyebrow": "Experience",
+      "heading": "Where I've worked",
+      "body": [
+        "Backend Engineer, FintechCo (2023–present) — payments and ledger services.",
+        "Software Engineer, CommerceX (2022–2023) — catalog and search APIs."
+      ],
+      "points": [
+        "Cut p95 API latency by 70%",
+        "Introduced contract tests for services",
+        "Set up structured logging + tracing",
+        "Owned the on-call runbooks"
+      ]
+    },
+    {
+      "id": "contact", "type": "contact",
+      "heading": "Let's build solid systems",
+      "subheading": "Open to backend roles and freelance API work.",
+      "items": [
+        { "icon": "mail", "label": "Email", "value": "you@email.com", "href": "mailto:you@email.com" },
+        { "icon": "github", "label": "GitHub", "value": "@your-handle", "href": "https://github.com/your-handle" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "in/your-handle", "href": "https://linkedin.com/in/your-handle" }
+      ]
+    },
+    { "id": "cta", "type": "cta", "heading": "Need a backend developer who cares about correctness?", "subheading": "Let's talk." }
+  ],
+  "footer": { "copyright": "© Neha Gupta" }
+}

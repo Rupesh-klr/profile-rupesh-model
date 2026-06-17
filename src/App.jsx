@@ -4,6 +4,8 @@ import { pages } from './pages/pages.config.js';
 import ProfileBySlug from './pages/ProfileBySlug.jsx';
 import PreviewPage from './pages/PreviewPage.jsx';
 import Onboarding from './pages/Onboarding.jsx';
+import TemplatesGallery from './pages/TemplatesGallery.jsx';
+import TemplateView from './pages/TemplateView.jsx';
 
 // Render a manifest entry: a custom component (`element`) or a
 // data-only page rendered through the shared SiteLayout.
@@ -26,6 +28,9 @@ export default function App() {
         })}
         {/* Platform landing / onboarding */}
         <Route path="/" element={<Onboarding />} />
+        {/* Template gallery + single-template view */}
+        <Route path="/templates" element={<TemplatesGallery />} />
+        <Route path="/templates/:id" element={<TemplateView />} />
         {/* Builder routes: live preview + published-profile-by-slug (API-driven) */}
         <Route path="/preview" element={<PreviewPage />} />
         <Route path="/p/:slug" element={<ProfileBySlug />} />

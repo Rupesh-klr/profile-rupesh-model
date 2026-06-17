@@ -1,0 +1,122 @@
+{
+  "meta": { "templateName": "Profilo", "template": "student-1", "role": "Student", "level": "Student", "model": 1, "note": "Student profile — projects-first. Edit text/links; swap image URLs." },
+  "person": {
+    "name": "Aarav Mehta",
+    "title": "Computer Science Student",
+    "tagline": "Final-year CS student who loves turning ideas into working products.",
+    "location": "Bengaluru, India",
+    "primaryLanguage": "Open to internships",
+    "images": [{ "src": "/images/placeholder.svg", "alt": "Aarav Mehta" }],
+    "social": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/your-handle", "handle": "@your-handle" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle", "handle": "in/your-handle" },
+      { "id": "mail", "label": "Email", "url": "mailto:you@email.com", "handle": "you@email.com" }
+    ]
+  },
+  "nav": {
+    "brand": "Aarav Mehta",
+    "links": [
+      { "id": "projects", "label": "Projects" },
+      { "id": "skills", "label": "Skills" },
+      { "id": "about", "label": "About" },
+      { "id": "education", "label": "Education" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "ui": {
+    "cta": "Hire / intern me",
+    "ctaSecondary": "See my projects",
+    "themeLight": "Light", "themeDark": "Dark", "scrollTop": "Back to top"
+  },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "variant": "1",
+      "attention": "Open to internships & entry-level roles · 2026",
+      "headline": "I build projects that solve real problems",
+      "headlineAccent": "React · Node.js · Python",
+      "description": "A final-year Computer Science student focused on full-stack web development. I learn by building — here are the projects I'm most proud of.",
+      "highlights": [
+        { "icon": "code", "label": "Focus", "value": "Full-Stack Web" },
+        { "icon": "spark", "label": "Year", "value": "Final year" },
+        { "icon": "rocket", "label": "Projects", "value": "8+ shipped" },
+        { "icon": "pin", "label": "Based in", "value": "Bengaluru" }
+      ]
+    },
+    {
+      "id": "stats", "type": "stats",
+      "items": [
+        { "value": 8, "suffix": "+", "label": "Projects Built" },
+        { "value": 4, "suffix": "", "label": "Hackathons" },
+        { "value": 2, "suffix": "", "label": "Internships" }
+      ]
+    },
+    {
+      "id": "projects", "type": "cardgrid", "variant": "outcomes",
+      "heading": "Featured Projects",
+      "subheading": "The work I care about most — built end to end, deployed and used by real people.",
+      "items": [
+        { "icon": "rocket", "title": "TaskFlow — Team Todo App", "desc": "Full-stack app (React, Node, MongoDB) with auth, real-time updates and 200+ users. Deployed on Render." },
+        { "icon": "report", "title": "CampusEats", "desc": "Food pre-order PWA for the college canteen — cut queue time by 40%. React + Firebase." },
+        { "icon": "brain", "title": "StudyBuddy AI", "desc": "Flashcard generator using the OpenAI API; hackathon finalist. Python + FastAPI + React." },
+        { "icon": "compass", "title": "DevPortfolio CLI", "desc": "Open-source tool that scaffolds a portfolio from a JSON file. 120★ on GitHub." }
+      ]
+    },
+    {
+      "id": "skills", "type": "cardgrid", "variant": "audience",
+      "heading": "Skills",
+      "subheading": "What I work with day to day.",
+      "items": [
+        { "icon": "code", "title": "Languages", "desc": "JavaScript/TypeScript, Python, Java, SQL." },
+        { "icon": "spark", "title": "Frontend", "desc": "React, Vite, Tailwind, accessibility, responsive UI." },
+        { "icon": "report", "title": "Backend", "desc": "Node/Express, FastAPI, REST, MongoDB, PostgreSQL." },
+        { "icon": "balance", "title": "Tools", "desc": "Git/GitHub, Docker basics, Postman, Figma, Linux." }
+      ]
+    },
+    {
+      "id": "about", "type": "about",
+      "greeting": "Hi 👋",
+      "heading": "About me",
+      "paragraphs": [
+        "I'm a final-year CS student who genuinely enjoys building software. Most of what I know came from shipping side projects, contributing to open source, and two internships where I worked on production code.",
+        "I'm looking for a full-time or internship role where I can keep learning from strong engineers and ship things that matter."
+      ],
+      "credentials": [
+        "2 software internships (1 startup, 1 product company)",
+        "Open-source contributor — 150+ GitHub stars across projects",
+        "Hackathon finalist (2x)",
+        "Comfortable across the full stack, strongest in React + Node"
+      ]
+    },
+    {
+      "id": "education", "type": "statement", "number": "01", "icon": "spark",
+      "eyebrow": "Education",
+      "heading": "B.Tech, Computer Science",
+      "body": [
+        "PES University, Bengaluru — 2022–2026. CGPA 8.7/10.",
+        "Relevant coursework: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Web Technologies, Machine Learning."
+      ],
+      "points": [
+        "DSA: 400+ problems solved (LeetCode)",
+        "Lead, college coding club",
+        "Certified: AWS Cloud Practitioner",
+        "Relevant electives in AI/ML"
+      ]
+    },
+    {
+      "id": "contact", "type": "contact",
+      "heading": "Let's connect",
+      "subheading": "Open to internships and entry-level roles — reach out any time.",
+      "items": [
+        { "icon": "mail", "label": "Email", "value": "you@email.com", "href": "mailto:you@email.com" },
+        { "icon": "github", "label": "GitHub", "value": "@your-handle", "href": "https://github.com/your-handle" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "in/your-handle", "href": "https://linkedin.com/in/your-handle" }
+      ]
+    },
+    {
+      "id": "cta", "type": "cta",
+      "heading": "Looking for a developer intern who ships?",
+      "subheading": "I'd love to talk — email me or check my GitHub."
+    }
+  ],
+  "footer": { "copyright": "© Aarav Mehta" }
+}

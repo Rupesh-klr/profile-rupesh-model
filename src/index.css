@@ -1605,3 +1605,23 @@ button:focus-visible {
 }
 .ai-locked h3 { margin: 0.2rem 0 0.5rem; }
 .ai-locked p { margin: 0; color: var(--text-muted); }
+
+/* ============================================================
+   TEMPLATE GALLERY ("/templates")
+   ============================================================ */
+.tpl-grid {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin-top: clamp(1.4rem, 1rem + 2vw, 2.4rem);
+}
+.tpl-card { padding: 1.4rem; border-radius: 20px; display: flex; flex-direction: column; gap: 0.35rem; }
+.tpl-card h3 { margin: 0.2rem 0 0; font-size: 1.2rem; }
+.tpl-role {
+  align-self: flex-start; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  padding: 0.2rem 0.6rem; border-radius: 999px;
+}
+.tpl-title { margin: 0; font-weight: 600; }
+.tpl-tagline { margin: 0 0 0.9rem; color: var(--text-muted); font-size: 0.95rem; }
+.tpl-card .btn { margin-top: auto; align-self: flex-start; }

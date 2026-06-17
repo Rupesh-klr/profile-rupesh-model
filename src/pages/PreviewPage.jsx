@@ -7,8 +7,20 @@ import { buildProfileHtml, downloadHtml, slugify } from '../utils/exportHtml.js'
  * Route "/preview" — paste a profile JSON (or load it from a URL), see it
  * rendered exactly as a public page, then export a self-contained HTML file.
  */
+// Seed from a template handed off by /templates/:id (Edit in preview), else sample.
+function initialText() {
+  try {
+    const handoff = sessionStorage.getItem('profilo-preview');
+    if (handoff) {
+      sessionStorage.removeItem('profilo-preview');
+      return handoff;
+    }
+  } catch { /* ignore */ }
+  return JSON.stringify(sample, null, 2);
+}
+
 export default function PreviewPage() {
-  const [text, setText] = useState(JSON.stringify(sample, null, 2));
+  const [text, setText] = useState(initialText);
   const [doc, setDoc] = useState(null);
   const [error, setError] = useState('');
 

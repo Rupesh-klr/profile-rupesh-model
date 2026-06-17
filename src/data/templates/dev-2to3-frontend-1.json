@@ -1,0 +1,112 @@
+{
+  "meta": { "templateName": "Profilo", "template": "dev-2to3-frontend-1", "role": "Frontend / UI-UX", "level": "2-3 yrs", "model": 1, "note": "Frontend / UI-UX developer (2–3 yrs), model 1." },
+  "person": {
+    "name": "Karthik Rao",
+    "title": "Frontend Developer & UI/UX",
+    "tagline": "I craft fast, accessible, pixel-perfect interfaces people love to use.",
+    "location": "Pune, India",
+    "primaryLanguage": "2 years experience",
+    "images": [{ "src": "/images/placeholder.svg", "alt": "Karthik Rao" }],
+    "social": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/your-handle", "handle": "@your-handle" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle", "handle": "in/your-handle" },
+      { "id": "website", "label": "Dribbble", "url": "https://dribbble.com/your-handle", "handle": "dribbble.com" }
+    ]
+  },
+  "nav": {
+    "brand": "Karthik Rao",
+    "links": [
+      { "id": "about", "label": "About" },
+      { "id": "skills", "label": "Skills" },
+      { "id": "projects", "label": "Work" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "ui": { "cta": "Work with me", "ctaSecondary": "See my work", "themeLight": "Light", "themeDark": "Dark", "scrollTop": "Back to top" },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "variant": "1",
+      "attention": "Frontend & UI/UX · React + Design · 2 yrs",
+      "headline": "Interfaces that are fast, clean and accessible",
+      "headlineAccent": "React · TypeScript · Figma · Tailwind",
+      "description": "Frontend developer with a designer's eye. I turn Figma into responsive, accessible, high-performance React UIs — and I sweat the details.",
+      "highlights": [
+        { "icon": "spark", "label": "Role", "value": "Frontend / UI" },
+        { "icon": "star", "label": "Experience", "value": "2 years" },
+        { "icon": "heart", "label": "Focus", "value": "UX & a11y" },
+        { "icon": "pin", "label": "Based in", "value": "Pune" }
+      ]
+    },
+    {
+      "id": "stats", "type": "stats",
+      "items": [
+        { "value": 2, "suffix": " yrs", "label": "Experience" },
+        { "value": 20, "suffix": "+", "label": "UIs Shipped" },
+        { "value": 98, "suffix": "", "label": "Avg Lighthouse Score" }
+      ]
+    },
+    {
+      "id": "about", "type": "about",
+      "greeting": "Hi 👋", "heading": "About me",
+      "paragraphs": [
+        "I'm a frontend developer who started in design, so I obsess over spacing, motion and accessibility as much as clean component code.",
+        "I build design systems, ship responsive UIs, and care a lot about performance and inclusive experiences."
+      ],
+      "credentials": [
+        "2 years building React/Next.js frontends",
+        "Built and maintained a 40-component design system",
+        "WCAG AA accessibility advocate",
+        "Lighthouse performance 95+ on shipped pages"
+      ]
+    },
+    {
+      "id": "skills", "type": "cardgrid", "variant": "audience",
+      "heading": "Skills",
+      "subheading": "Design meets code.",
+      "items": [
+        { "icon": "spark", "title": "Frameworks", "desc": "React, Next.js, TypeScript, Vite." },
+        { "icon": "heart", "title": "Styling & Motion", "desc": "Tailwind, CSS, Framer Motion, design tokens." },
+        { "icon": "star", "title": "Design", "desc": "Figma, design systems, prototyping, UX flows." },
+        { "icon": "balance", "title": "Quality", "desc": "Accessibility (a11y), responsive, performance, Storybook." }
+      ]
+    },
+    {
+      "id": "projects", "type": "cardgrid", "variant": "outcomes",
+      "heading": "Selected Work",
+      "subheading": "Interfaces I've designed and built.",
+      "items": [
+        { "icon": "star", "title": "Design System", "desc": "Built a reusable component library in React + Storybook; adopted by 4 product teams." },
+        { "icon": "rocket", "title": "Marketing Site Revamp", "desc": "Redesigned and rebuilt the landing site; +22% signups, 99 Lighthouse." },
+        { "icon": "heart", "title": "Accessible Checkout", "desc": "Reworked a checkout flow for full keyboard + screen-reader support." }
+      ]
+    },
+    {
+      "id": "experience", "type": "statement", "number": "01", "icon": "spark",
+      "eyebrow": "Experience",
+      "heading": "Where I've worked",
+      "body": [
+        "Frontend Developer, AgencyX (2023–present) — UI for client web apps and marketing sites.",
+        "UI Developer (intern → FT), StudioY (2022–2023) — design-to-code for a SaaS dashboard."
+      ],
+      "points": [
+        "Owned the component library + docs",
+        "Cut bundle size 35% with code-splitting",
+        "Introduced visual regression tests",
+        "Pair-designed with the product team"
+      ]
+    },
+    {
+      "id": "contact", "type": "contact",
+      "heading": "Let's make something beautiful",
+      "subheading": "Available for frontend & UI/UX roles and freelance.",
+      "items": [
+        { "icon": "mail", "label": "Email", "value": "you@email.com", "href": "mailto:you@email.com" },
+        { "icon": "github", "label": "GitHub", "value": "@your-handle", "href": "https://github.com/your-handle" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "in/your-handle", "href": "https://linkedin.com/in/your-handle" }
+      ]
+    },
+    { "id": "cta", "type": "cta", "heading": "Need a frontend dev with design sense?", "subheading": "Let's talk — I'd love to see your project." }
+  ],
+  "footer": { "copyright": "© Karthik Rao" }
+}

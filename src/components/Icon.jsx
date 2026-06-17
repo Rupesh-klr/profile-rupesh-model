@@ -41,6 +41,16 @@ const paths = {
   phone: <><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></>,
   pin: <><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z" /><circle cx="12" cy="10" r="2.6" /></>,
   link2: <><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1" /><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1" /></>,
+
+  // dev / role icons
+  code: <><path d="m8 9-3 3 3 3M16 9l3 3-3 3M13.5 7l-3 10" /></>,
+  github: <><circle cx="6" cy="6" r="2" /><circle cx="6" cy="18" r="2" /><circle cx="17" cy="8" r="2" /><path d="M6 8v8M17 10c0 4-4 4.5-7 4.5" /></>,
+  linkedin: <><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7" /></>,
+  cloud: <><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a3.5 3.5 0 0 1-1 6.9z" /></>,
+  database: <><ellipse cx="12" cy="6" rx="7" ry="3" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" /></>,
+  brain: <><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-1 5 3 3 0 0 0 2 5 3 3 0 0 0 5 0V4.5A2.5 2.5 0 0 0 9 4zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 1 5 3 3 0 0 1-2 5 3 3 0 0 1-5 0" /></>,
+  layers: <><path d="m12 3 9 5-9 5-9-5z" /><path d="m3 13 9 5 9-5M3 16.5l9 5 9-5" /></>,
+  rocket: <><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5M9 15l-3-3a11 11 0 0 1 7-9c3 0 5 2 5 5a11 11 0 0 1-9 7z" /><circle cx="14.5" cy="9.5" r="1.5" /></>,
 };
 
 const FILLED = new Set(['facebook', 'star']);

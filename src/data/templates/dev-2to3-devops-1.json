@@ -1,0 +1,112 @@
+{
+  "meta": { "templateName": "Profilo", "template": "dev-2to3-devops-1", "role": "DevOps", "level": "2-3 yrs", "model": 1, "note": "DevOps engineer (2–3 yrs), model 1." },
+  "person": {
+    "name": "Arjun Nair",
+    "title": "DevOps Engineer",
+    "tagline": "I make shipping safe, fast and boring — automated pipelines and reliable infra.",
+    "location": "Kochi, India",
+    "primaryLanguage": "3 years experience",
+    "images": [{ "src": "/images/placeholder.svg", "alt": "Arjun Nair" }],
+    "social": [
+      { "id": "github", "label": "GitHub", "url": "https://github.com/your-handle", "handle": "@your-handle" },
+      { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle", "handle": "in/your-handle" },
+      { "id": "mail", "label": "Email", "url": "mailto:you@email.com", "handle": "you@email.com" }
+    ]
+  },
+  "nav": {
+    "brand": "Arjun Nair",
+    "links": [
+      { "id": "about", "label": "About" },
+      { "id": "skills", "label": "Toolbox" },
+      { "id": "projects", "label": "Work" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "ui": { "cta": "Work with me", "ctaSecondary": "See my work", "themeLight": "Light", "themeDark": "Dark", "scrollTop": "Back to top" },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "variant": "1",
+      "attention": "DevOps · CI/CD & Cloud · 3 yrs",
+      "headline": "Ship faster, break less",
+      "headlineAccent": "Docker · Kubernetes · Terraform · AWS",
+      "description": "DevOps engineer who automates the path to production — pipelines, infrastructure as code, observability and cost-aware cloud.",
+      "highlights": [
+        { "icon": "compass", "label": "Role", "value": "DevOps / SRE" },
+        { "icon": "spark", "label": "Experience", "value": "3 years" },
+        { "icon": "cloud", "label": "Focus", "value": "CI/CD & Cloud" },
+        { "icon": "pin", "label": "Based in", "value": "Kochi" }
+      ]
+    },
+    {
+      "id": "stats", "type": "stats",
+      "items": [
+        { "value": 3, "suffix": " yrs", "label": "Experience" },
+        { "value": 60, "suffix": "%", "label": "Faster Deploys" },
+        { "value": 40, "suffix": "%", "label": "Cloud Cost Saved" }
+      ]
+    },
+    {
+      "id": "about", "type": "about",
+      "greeting": "Hi 👋", "heading": "About me",
+      "paragraphs": [
+        "I'm a DevOps engineer who believes deployments should be boring. I automate pipelines, codify infrastructure, and build the guardrails that let teams ship confidently.",
+        "I care about reliability, observability and keeping cloud bills sane."
+      ],
+      "credentials": [
+        "3 years in DevOps / platform engineering",
+        "Cut deploy time 60% with automated pipelines",
+        "Reduced cloud spend 40% via right-sizing & autoscaling",
+        "Set up monitoring, alerting and on-call processes"
+      ]
+    },
+    {
+      "id": "skills", "type": "cardgrid", "variant": "audience",
+      "heading": "Toolbox",
+      "subheading": "How I keep production healthy.",
+      "items": [
+        { "icon": "layers", "title": "Containers", "desc": "Docker, Kubernetes, Helm." },
+        { "icon": "compass", "title": "IaC & CI/CD", "desc": "Terraform, GitHub Actions, Jenkins, ArgoCD." },
+        { "icon": "cloud", "title": "Cloud", "desc": "AWS (ECS/EKS/Lambda), GCP basics, networking." },
+        { "icon": "report", "title": "Observability", "desc": "Prometheus, Grafana, ELK, alerting & SLOs." }
+      ]
+    },
+    {
+      "id": "projects", "type": "cardgrid", "variant": "outcomes",
+      "heading": "Selected Work",
+      "subheading": "Platform work I've delivered.",
+      "items": [
+        { "icon": "compass", "title": "Zero-downtime CI/CD", "desc": "Built GitHub Actions + ArgoCD pipelines with blue-green deploys; releases went from weekly to on-demand." },
+        { "icon": "layers", "title": "Kubernetes Migration", "desc": "Moved 12 services to EKS with Helm + autoscaling; improved reliability and cut cost 40%." },
+        { "icon": "report", "title": "Observability Stack", "desc": "Rolled out Prometheus + Grafana + alerting; MTTR dropped from hours to minutes." }
+      ]
+    },
+    {
+      "id": "experience", "type": "statement", "number": "01", "icon": "cloud",
+      "eyebrow": "Experience",
+      "heading": "Where I've worked",
+      "body": [
+        "DevOps Engineer, ScaleCo (2023–present) — platform, CI/CD and cloud infra.",
+        "Cloud Support Engineer, HostX (2022–2023) — Linux, networking and deployments."
+      ],
+      "points": [
+        "Owned Terraform for all environments",
+        "Introduced SLOs and error budgets",
+        "Automated secrets management",
+        "Ran incident reviews & runbooks"
+      ]
+    },
+    {
+      "id": "contact", "type": "contact",
+      "heading": "Let's make shipping boring",
+      "subheading": "Open to DevOps / SRE / platform roles and freelance.",
+      "items": [
+        { "icon": "mail", "label": "Email", "value": "you@email.com", "href": "mailto:you@email.com" },
+        { "icon": "github", "label": "GitHub", "value": "@your-handle", "href": "https://github.com/your-handle" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "in/your-handle", "href": "https://linkedin.com/in/your-handle" }
+      ]
+    },
+    { "id": "cta", "type": "cta", "heading": "Need someone to tame your deploys & cloud?", "subheading": "Let's talk." }
+  ],
+  "footer": { "copyright": "© Arjun Nair" }
+}
