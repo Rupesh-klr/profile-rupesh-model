@@ -1556,8 +1556,9 @@ button:focus-visible {
 .onb-steps { grid-template-columns: repeat(4, 1fr); }
 .onb-features { grid-template-columns: repeat(3, 1fr); }
 .onb-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; margin-inline: auto; }
+.onb-mv { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin-inline: auto; }
 @media (max-width: 900px) { .onb-steps, .onb-features { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .onb-steps, .onb-features, .onb-plans { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .onb-steps, .onb-features, .onb-plans, .onb-mv { grid-template-columns: 1fr; } }
 
 .onb-card { padding: 1.4rem; border-radius: 20px; }
 .onb-card h3 { margin: 0.4rem 0 0.4rem; font-size: 1.1rem; }

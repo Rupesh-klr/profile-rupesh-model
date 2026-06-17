@@ -30,6 +30,13 @@ const FEATURES = [
   ['Light / dark + palettes', 'Warm light and elegant dark themes, plus secret colour palettes.'],
 ];
 
+const USECASES = [
+  ['Students', 'Show your projects and skills to land internships and first jobs — a real portfolio without the portfolio-building headache.'],
+  ['Working professionals', 'A clean, always-current profile to share with recruiters, clients and your network — update it in minutes.'],
+  ['Freelancers', 'Pitch your services and past work, then export an HTML page to host on your own domain.'],
+  ['Career switchers', 'Reframe your story around the role you want, with the right projects front and centre.'],
+];
+
 export default function Onboarding() {
   const [plans, setPlans] = useState(FALLBACK_PLANS);
 
@@ -54,9 +61,9 @@ export default function Onboarding() {
             <span className="gradient-text">built from one JSON.</span>
           </h1>
           <p className="onb-lead">
-            Beautiful, bilingual profile websites for students and working professionals — edit
-            everything from a single JSON (no code), preview it live, then publish or export a
-            self-contained HTML you can host anywhere.
+            Make your profile <b>live in minutes — free, no code, fully customizable</b>. Beautiful,
+            bilingual profile sites for students and working professionals: edit one JSON, preview it,
+            then publish to a link or export a self-contained HTML you own and host anywhere.
           </p>
           <div className="onb-cta">
             <Link className="btn btn-primary" to="/templates">Browse templates</Link>
@@ -65,6 +72,36 @@ export default function Onboarding() {
           </div>
         </div>
       </header>
+
+      {/* Mission & Vision */}
+      <section className="section container">
+        <div className="onb-grid onb-mv">
+          <div className="glass onb-card">
+            <span className="eyebrow">Our mission</span>
+            <h3>Put everyone's work online — free</h3>
+            <p>To help every student and working professional publish a beautiful, credible profile in minutes — no code, and no paywall just to be seen.</p>
+          </div>
+          <div className="glass onb-card">
+            <span className="eyebrow">Our vision</span>
+            <h3>A profile you truly own</h3>
+            <p>A customizable, portable profile you control: edit it anytime from one JSON, host it anywhere, never get locked in. Your work should speak for itself.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Who it's for */}
+      <section className="section container">
+        <h2 className="display section-title" style={{ textAlign: 'center' }}>Who it's for</h2>
+        <p className="section-sub" style={{ textAlign: 'center' }}>One profile, many use-cases — all free and fully customizable.</p>
+        <div className="onb-grid onb-features">
+          {USECASES.map(([title, desc]) => (
+            <div key={title} className="glass onb-card">
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* How it works */}
       <section className="section container">

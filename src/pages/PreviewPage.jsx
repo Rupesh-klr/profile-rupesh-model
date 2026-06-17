@@ -2,6 +2,9 @@ import { useState } from 'react';
 import SiteLayout from '../components/SiteLayout.jsx';
 import sample from '../data/default-template.json';
 import { buildProfileHtml, downloadHtml, slugify } from '../utils/exportHtml.js';
+import { deployProfile } from '../config/api.js';
+
+const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{1,38}[a-z0-9])?$/;
 
 /**
  * Route "/preview" — paste a profile JSON (or load it from a URL), see it
@@ -23,6 +26,11 @@ export default function PreviewPage() {
   const [text, setText] = useState(initialText);
   const [doc, setDoc] = useState(null);
   const [error, setError] = useState('');
+  const [showPublish, setShowPublish] = useState(false);
+  const [pub, setPub] = useState({ slug: '', email: '', password: '', name: '' });
+  const [pubBusy, setPubBusy] = useState(false);
+  const [pubError, setPubError] = useState('');
+  const [pubResult, setPubResult] = useState(null);
 
   function render() {
     try {
@@ -54,6 +62,40 @@ export default function PreviewPage() {
     a.download = 'profile.json';
     a.click();
     URL.revokeObjectURL(a.href);
+  }
+
+  async function deploy() {
+    let parsed;
+    try {
+      parsed = JSON.parse(text);
+    } catch (e) {
+      setPubError('Fix the JSON first: ' + e.message);
+      return;
+    }
+    if (!SLUG_RE.test(pub.slug)) {
+      setPubError('Slug must be 2–40 chars: lowercase letters, numbers and dashes.');
+      return;
+    }
+    if (pub.password.length < 6) {
+      setPubError('Password must be at least 6 characters.');
+      return;
+    }
+    setPubBusy(true);
+    setPubError('');
+    try {
+      const res = await deployProfile({
+        slug: pub.slug,
+        email: pub.email,
+        password: pub.password,
+        displayName: pub.name,
+        doc: parsed,
+      });
+      setPubResult(res);
+    } catch (e) {
+      setPubError(e.message || 'Deploy failed. Check the API is running.');
+    } finally {
+      setPubBusy(false);
+    }
   }
 
   function exportHtml() {
@@ -92,9 +134,54 @@ export default function PreviewPage() {
       </p>
       <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap', margin: '0 0 .6rem' }}>
         <button style={btnPrimary} onClick={render}>Render preview</button>
+        <button style={btnPublish} onClick={() => setShowPublish((s) => !s)}>🚀 Publish / Deploy</button>
         <button style={btn} onClick={loadUrl}>Load from URL…</button>
         <button style={btn} onClick={downloadJson}>Download JSON</button>
       </div>
+
+      {showPublish && (
+        <div style={panel}>
+          {pubResult ? (
+            <div>
+              <h3 style={{ margin: '0 0 .4rem' }}>🎉 Published!</h3>
+              <p style={{ margin: '0 0 .5rem' }}>
+                Your page is live at{' '}
+                <a href={pubResult.url}>{window.location.origin}{pubResult.url}</a>
+              </p>
+              {pubResult.editKey && (
+                <p style={{ margin: '0 0 .6rem' }}>
+                  Edit key (save it — shown once): <code style={code}>{pubResult.editKey}</code>
+                </p>
+              )}
+              <a style={{ ...btnPrimary, textDecoration: 'none' }} href={pubResult.url}>Open my page →</a>
+            </div>
+          ) : (
+            <>
+              <h3 style={{ margin: '0 0 .35rem' }}>Publish this page</h3>
+              <p style={{ margin: '0 0 .7rem', opacity: 0.75, fontSize: '.9rem' }}>
+                Creates an account (or logs in), publishes to <code style={code}>/p/&lt;slug&gt;</code>, and
+                returns an edit key. Your account is separate from any other login.
+              </p>
+              <div style={formGrid}>
+                <input style={input} placeholder="slug (e.g. rupesh)" value={pub.slug}
+                  onChange={(e) => setPub({ ...pub, slug: e.target.value.toLowerCase() })} />
+                <input style={input} placeholder="display name (optional)" value={pub.name}
+                  onChange={(e) => setPub({ ...pub, name: e.target.value })} />
+                <input style={input} type="email" placeholder="email" value={pub.email}
+                  onChange={(e) => setPub({ ...pub, email: e.target.value })} />
+                <input style={input} type="password" placeholder="password (min 6)" value={pub.password}
+                  onChange={(e) => setPub({ ...pub, password: e.target.value })} />
+              </div>
+              {pubError && <div style={{ ...err, marginTop: '.6rem' }}>{pubError}</div>}
+              <button style={{ ...btnPrimary, marginTop: '.7rem', opacity: pubBusy ? 0.6 : 1 }}
+                disabled={pubBusy} onClick={deploy}>
+                {pubBusy ? 'Publishing…' : 'Deploy 🚀'}
+              </button>
+            </>
+          )}
+        </div>
+      )}
+
       {error && <div style={err}>{error}</div>}
       <textarea value={text} onChange={(e) => setText(e.target.value)} spellCheck={false} style={ta} />
     </div>
@@ -125,3 +212,8 @@ const ta = { width: '100%', minHeight: '60vh', fontFamily: 'ui-monospace, Menlo,
 const btn = { padding: '.5rem .9rem', borderRadius: 999, border: '1px solid #b58', background: '#fff', cursor: 'pointer' };
 const btnPrimary = { ...btn, background: '#7c3aed', color: '#fff', border: 'none' };
 const err = { background: '#fde8e8', color: '#9b1c1c', padding: '.6rem .9rem', borderRadius: 8, margin: '0 0 .6rem' };
+const btnPublish = { ...btn, borderColor: '#7c3aed', color: '#7c3aed', fontWeight: 600 };
+const panel = { border: '1px solid #e3d9ec', background: '#faf6fe', borderRadius: 12, padding: '1rem', margin: '0 0 .8rem' };
+const formGrid = { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '.5rem' };
+const input = { padding: '.55rem .7rem', borderRadius: 8, border: '1px solid #ccc', fontSize: 14 };
+const code = { background: '#efe7f7', padding: '.1rem .4rem', borderRadius: 6, fontFamily: 'ui-monospace, Menlo, Consolas, monospace' };
