@@ -39,7 +39,7 @@
   "nav": {
     "brand": { "en": "Vedika Raksha", "te": "వేదిక రక్ష" },
     "links": [
-      { "id": "profile", "label": { "en": "← Profile", "te": "← ప్రొఫైల్" }, "route": "/" },
+      { "id": "profile", "label": { "en": "← Profile", "te": "← ప్రొఫైల్" }, "route": "/vedika-raksha-profile" },
       { "id": "about", "label": { "en": "About", "te": "గురించి" } },
       { "id": "challenges", "label": { "en": "Challenges", "te": "సవాళ్లు" } },
       { "id": "learn", "label": { "en": "What You'll Learn", "te": "మీరు నేర్చుకునేవి" } },

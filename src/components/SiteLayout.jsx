@@ -11,8 +11,11 @@ import { getSeoForData } from '../data/seo.js';
  * Both the Profile page and the Webinar page reuse this — they only differ in
  * the `data` they pass in. This is what makes the template reusable.
  */
-export default function SiteLayout({ data }) {
+export default function SiteLayout({ data, features }) {
   const { person, nav, ui, sections, footer } = data;
+  // Plan features for gating (e.g. the AI section). May come as a prop, be
+  // attached to the resolved doc by ProfileBySlug, or live in meta.
+  const feats = features || data.__features || data.meta?.features || null;
 
   // Each route starts at the top; <Seo> owns the title + head metadata.
   useEffect(() => {
@@ -26,7 +29,7 @@ export default function SiteLayout({ data }) {
 
       <main>
         {sections.map((section) => (
-          <SectionRenderer key={section.id} section={section} person={person} ui={ui} />
+          <SectionRenderer key={section.id} section={section} person={person} ui={ui} features={feats} />
         ))}
       </main>
 

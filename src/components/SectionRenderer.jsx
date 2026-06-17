@@ -10,6 +10,7 @@ import Contact from './sections/Contact.jsx';
 import Team from './sections/Team.jsx';
 import Legal from './sections/Legal.jsx';
 import Statement from './sections/Statement.jsx';
+import AiSuggest from './sections/AiSuggest.jsx';
 
 /**
  * Maps a section `type` (from profile.json) to its component.
@@ -29,15 +30,22 @@ const registry = {
   team: Team,
   legal: Legal,
   statement: Statement,
+  aisuggest: AiSuggest,
 };
 
-export default function SectionRenderer({ section, person, ui }) {
+export default function SectionRenderer({ section, person, ui, features }) {
   const Component = registry[section.type];
   if (!Component) {
     if (import.meta.env.DEV) {
       console.warn(`[Profilo] No component registered for section type "${section.type}" (id: ${section.id}).`);
     }
     return null;
+  }
+  // Plan-gated AI section: locked on Free (features present but aiSuggestions=false).
+  // When no plan context exists (author/preview), it shows unlocked.
+  if (section.type === 'aisuggest') {
+    const enabled = features ? !!features.aiSuggestions : true;
+    return <AiSuggest section={section} locked={!enabled} />;
   }
   return <Component section={section} person={person} ui={ui} />;
 }

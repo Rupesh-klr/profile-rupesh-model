@@ -40,6 +40,26 @@
       ]
     },
     {
+      "id": "ai",
+      "type": "aisuggest",
+      "badge": { "en": "AI suggestions", "te": "AI సూచనలు" },
+      "heading": { "en": "AI suggestions for your page", "te": "మీ పేజీకి AI సూచనలు" },
+      "subheading": {
+        "en": "Smart, automatic ideas to improve your profile — available on the Advanced plan.",
+        "te": "మీ ప్రొఫైల్‌ను మెరుగుపరచడానికి స్మార్ట్, ఆటోమేటిక్ ఆలోచనలు — అడ్వాన్స్‌డ్ ప్లాన్‌లో అందుబాటులో."
+      },
+      "lockedTitle": { "en": "AI automation suggestions", "te": "AI ఆటోమేషన్ సూచనలు" },
+      "lockedText": {
+        "en": "Upgrade to Advanced (₹100/year) to unlock AI-powered suggestions for your page.",
+        "te": "మీ పేజీకి AI సూచనలను అన్‌లాక్ చేయడానికి అడ్వాన్స్‌డ్‌కి (₹100/సంవత్సరం) అప్‌గ్రేడ్ చేయండి."
+      },
+      "items": [
+        { "icon": "spark", "title": { "en": "Sharper headline", "te": "మెరుగైన హెడ్‌లైన్" }, "desc": { "en": "AI rewrites your hero headline for more impact.", "te": "మరింత ప్రభావం కోసం మీ హీరో హెడ్‌లైన్‌ను AI తిరిగి రాస్తుంది." } },
+        { "icon": "report", "title": { "en": "SEO keywords", "te": "SEO కీవర్డ్‌లు" }, "desc": { "en": "Suggested keywords and meta description for your niche.", "te": "మీ రంగానికి సూచించిన కీవర్డ్‌లు, మెటా వివరణ." } },
+        { "icon": "heart", "title": { "en": "Section ideas", "te": "విభాగ ఆలోచనలు" }, "desc": { "en": "Recommends sections to add based on your goals.", "te": "మీ లక్ష్యాల ఆధారంగా జోడించాల్సిన విభాగాలను సూచిస్తుంది." } }
+      ]
+    },
+    {
       "id": "cta",
       "type": "cta",
       "heading": { "en": "Make this page yours", "te": "ఈ పేజీని మీదిగా చేసుకోండి" },

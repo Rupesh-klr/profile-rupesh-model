@@ -22,7 +22,10 @@ export default function ProfileBySlug() {
     fetchProfile(slug, pageSlug)
       .then((payload) => {
         if (!alive) return;
-        setDoc(resolveDoc(payload) || defaultTemplate);
+        const resolved = resolveDoc(payload) || defaultTemplate;
+        // Carry the plan's feature flags so plan-gated sections (AI) render correctly.
+        if (payload && !payload.isDefault && payload.features) resolved.__features = payload.features;
+        setDoc(resolved);
       })
       .catch(() => {
         if (alive) setDoc(defaultTemplate);

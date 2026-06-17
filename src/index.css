@@ -1574,3 +1574,34 @@ button:focus-visible {
 .onb-plan-price { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--primary); }
 .onb-plan-list { list-style: none; padding: 0; margin: 0.4rem 0 1rem; display: grid; gap: 0.45rem; color: var(--text); }
 .onb-plan .btn { margin-top: auto; }
+
+/* ============================================================
+   AI-SUGGESTION SECTION ("aisuggest", plan-gated)
+   ============================================================ */
+.ai-badge {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
+  color: var(--on-primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  margin-bottom: 0.7rem;
+}
+.ai-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: clamp(1.4rem, 1rem + 2vw, 2.4rem);
+}
+.ai-card { padding: 1.3rem; border-radius: 20px; }
+.ai-card h3 { margin: 0.5rem 0 0.35rem; font-size: 1.06rem; }
+.ai-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+.ai-card-icon {
+  display: inline-grid; place-items: center; width: 40px; height: 40px;
+  border-radius: 12px; color: var(--on-primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+.ai-locked {
+  text-align: center; max-width: 620px; margin-inline: auto;
+  padding: clamp(1.6rem, 1rem + 3vw, 2.6rem); border-radius: 22px;
+}
+.ai-locked h3 { margin: 0.2rem 0 0.5rem; }
+.ai-locked p { margin: 0; color: var(--text-muted); }
