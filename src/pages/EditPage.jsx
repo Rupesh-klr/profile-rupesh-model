@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { profileLogin, forgotPassword, fetchAdminProfile, saveAndPublish, DEV_OTP } from '../config/api.js';
 import { useAuth } from '../context/AuthContext.jsx';
+import JsonFormEditor from '../components/JsonFormEditor.jsx';
 
 /**
  * Route "/edit/:slug" — owner editor.
@@ -38,6 +39,8 @@ export default function EditPage() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [savedUrl, setSavedUrl] = useState('');
+  const [mode, setMode] = useState('visual'); // 'visual' | 'code'
+  const parsedDoc = useMemo(() => { try { return JSON.parse(text); } catch { return null; } }, [text]);
 
   const [showForgot, setShowForgot] = useState(false);
   const [forgot, setForgot] = useState({ username: '', otp: DEV_OTP, newPassword: '' });
@@ -164,7 +167,21 @@ export default function EditPage() {
 
       {savedUrl && <div style={note}>✅ Saved & published — <a href={savedUrl}>open {window.location.origin}{savedUrl}</a></div>}
       {error && <div style={err}>{error}</div>}
-      <textarea value={text} onChange={(e) => setText(e.target.value)} spellCheck={false} style={ta} />
+
+      <div className="ed-tabs">
+        <button className={`ed-tab ${mode === 'visual' ? 'active' : ''}`} onClick={() => setMode('visual')}>🧩 Visual editor</button>
+        <button className={`ed-tab ${mode === 'code' ? 'active' : ''}`} onClick={() => setMode('code')}>{'{ } JSON'}</button>
+      </div>
+
+      {mode === 'code' ? (
+        <textarea value={text} onChange={(e) => setText(e.target.value)} spellCheck={false} style={ta} />
+      ) : parsedDoc ? (
+        <div className="ed-form">
+          <JsonFormEditor value={parsedDoc} onChange={(nv) => setText(JSON.stringify(nv, null, 2))} />
+        </div>
+      ) : (
+        <div style={err}>The JSON is invalid — switch to the JSON tab to fix it, then return here.</div>
+      )}
     </div>
   );
 }
